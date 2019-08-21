@@ -1,0 +1,18 @@
+id,created_at,updated_at,nombre,id_linea_capacitacion
+1,2019-06-05 17:48:14,2019-06-05 17:48:14,Teorías de la adquisición del lenguaje,2
+2,2019-06-05 17:51:00,2019-06-05 17:51:00,Enseñar al cerebro a aprender,2
+3,2019-06-05 17:51:36,2019-06-05 17:51:36,Inglés para profesores,2
+4,2019-06-05 17:51:53,2019-06-05 17:51:53,Desarrollar habilidades de lectura y escritura,2
+5,2019-06-05 17:57:08,2019-06-05 17:57:08,Funciones de enseñanza versus estructura,3
+6,2019-06-05 17:57:34,2019-06-05 17:57:34,La filosofía de la enseñanza centrada en el alumno,3
+7,2019-06-05 17:57:49,2019-06-05 17:57:49,Dinámica del aula,3
+8,2019-06-05 17:57:57,2019-06-05 17:57:57,Enseñanza de niveles de idiomas mixtos,3
+9,2019-06-05 17:58:03,2019-06-05 17:58:03,Error de corrección,3
+10,2019-06-05 17:58:08,2019-06-05 17:58:08,Enseñanza del léxico,3
+11,2019-06-05 17:58:13,2019-06-05 17:58:13,Metodologías y estilos de aprendizaje,3
+12,2019-06-05 17:58:18,2019-06-05 17:58:18,Aplicar el enfoque comunicativo,3
+13,2019-06-05 17:59:30,2019-06-05 17:59:30,Aplicando los componentes de CLIL,4
+14,2019-06-05 18:00:12,2019-06-05 18:00:12,Impacto de CLIL en los estilos de enseñanza y aprendizaje,4
+15,2019-06-05 18:00:39,2019-06-05 18:00:39,Desarrollo de materiales para CLIL,4
+16,2019-06-05 18:02:49,2019-06-05 18:02:49,Exploración y adaptación de materiales,5
+17,2019-06-05 18:03:09,2019-06-05 18:03:09,Creatividad en el aula,5
