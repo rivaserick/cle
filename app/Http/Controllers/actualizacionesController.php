@@ -116,7 +116,7 @@ class actualizacionesController extends Controller
             $name=time().$file->getClientOriginalName();
             $filePath = 'public/evidencia/' . $id_profesor . '/' . $name;
             Storage::disk('s3')->put($filePath, file_get_contents($file));
-            Storage::put($filePath, file_get_contents($file));
+            //Storage::put($filePath, file_get_contents($file));
 
             $actualizacion->archivo = $filePath;
 
