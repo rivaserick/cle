@@ -25,7 +25,7 @@
                     Duración: <strong>{{$actualizacion->duracion}} hr</strong>
                 </div>
                 <div class="col-6 col-lg-3">
-                    Evidencia: <a href="{{Storage::url($actualizacion->archivo)}}" target="_blank"
+                    Evidencia: <a href="{{Storage::disk('s3')->url($actualizacion->archivo)}}" target="_blank"
                         class="btn btn-primary btn-sm text-white">Ver PDF</a>
                 </div>
                 <div class="col-12 text-left my-2">
@@ -42,18 +42,31 @@
             </div>
         </div>
     </div>
-    @forelse ($mensajes as $mensaje)
-    <div class="alert alert-danger text-center">
-        <h4 class="alert-heading">Esta actualización fue <strong>rechazada</strong> por el siguiente motivo: </h4>
-        <hr>
-        <h3>{{$mensaje->mensaje}}</h3>
-    </div>
-    @empty
-    <div class="alert alert-success text-center">
-        <h4 class="alert-heading">¡Felicitaciones!</h4>
-        <h3>Esta actualizacion fue <strong>aceptada.</strong></h3>
-    </div>
-    @endforelse
+    @switch($actualizacion->id_status)
+        @case(1)
+            <div class="alert alert-warning text-center">
+                <h4 class="alert-heading">Actualización pendiente</h4>
+                <h3>Esta actualizacion no ha sido aceptada o rechazada aún.</h3>
+            </div>
+            @break
+        @case(2)
+            <div class="alert alert-success text-center">
+                <h4 class="alert-heading">¡Felicitaciones!</h4>
+                <h3>Esta actualizacion fue <strong>aceptada.</strong></h3>
+            </div>
+            @break
+        @case(3)
+            @foreach ($mensajes as $mensaje)
+                <div class="alert alert-danger text-center">
+                    <h4 class="alert-heading">Esta actualización fue <strong>rechazada</strong> por el siguiente motivo: </h4>
+                    <hr>
+                    <h3>{{$mensaje->mensaje}}</h3>
+                </div>
+            @endforeach
+            @break
+        @default
+
+    @endswitch
     <a href="{{route('actualizaciones.index')}}" class="btn btn-secondary">Regresar</a>
 </div>
 <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>

@@ -1,6 +1,6 @@
 <li>
     <a class="nav-link" href="{{route('coordinacion.actualizaciones.index')}}">
-        Actualizaciones
+        Actualización docente
     </a>
 
 </li>

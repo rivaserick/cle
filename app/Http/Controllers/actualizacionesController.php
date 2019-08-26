@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Actualizacion;
 use App\LineaCapacitacion;
 use App\Mensaje;
+use App\Period;
 use App\SublineaCapacitacion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -108,15 +109,23 @@ class actualizacionesController extends Controller
             $actualizacion->fecha_fin = \request('fecha_fin');
             $actualizacion->id_linea_capacitacion = \request('id_linea_capacitacion');
             $actualizacion->id_sublinea_capacitacion = \request('id_sublinea_capacitacion');
+            
+            //$path = $request->file('evidencia')->store('public/evidencia/' . $id_profesor);
 
-            Session::flash('message', 'Actualización agregada correctamente.');
-            $path = $request->file('evidencia')->store('public/evidencia/' . $id_profesor);
-            $actualizacion->archivo = $path;
+            $file = $request->file('evidencia');
+            $name=time().$file->getClientOriginalName();
+            $filePath = 'public/evidencia/' . $id_profesor . '/' . $name;
+            Storage::disk('s3')->put($filePath, file_get_contents($file));
+            Storage::put($filePath, file_get_contents($file));
+
+            $actualizacion->archivo = $filePath;
+
             $actualizacion->id_periodo = Period::where('vigente', true)->first()->id;
             $actualizacion->id_status = '1';
             $actualizacion->id_profesor = $id_profesor;
             $actualizacion->save();
-
+            Session::flash('message', 'Actualización agregada correctamente.');
+            
             return ActualizacionesController::index();
         }
 

@@ -32,7 +32,7 @@
                     Duración: <strong>{{$actualizacion->duracion}} hr</strong>
                 </div>
                 <div class="col-6 col-lg-3">
-                    Evidencia: <a href="{{Storage::url($actualizacion->archivo)}}" target="_blank"
+                    Evidencia: <a href="{{Storage::disk('s3')->url($actualizacion->archivo)}}" target="_blank"
                         class="btn btn-primary btn-sm text-white">Ver PDF</a>
                 </div>
                 <div class="col-12 text-left my-2">
@@ -97,7 +97,7 @@
             @default
                 
         @endswitch
-        <a href="{{route('coordinacion.actualizaciones.index')}}" class="btn btn-warning">Regresar</a> 
+        <a href="{{route('coordinacion.actualizaciones.index')}}" class="btn btn-secondary">Regresar</a> 
 </div>
 <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
 
