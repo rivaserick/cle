@@ -7,7 +7,7 @@
     @if ($actualizacion->id_status < 4) <div class="col-12 col-lg-12">
         @switch($actualizacion->id_status)
         @case(1)
-        <div class="card border-warning my-2">v
+        <div class="card border-warning my-2">
             <div class="card-header border-warning">
                 @break
                 @case(2)
