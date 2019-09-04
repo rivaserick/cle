@@ -12,7 +12,7 @@
     <div class="card text-center">
         <div class="card-body">
             <p class="card-text">Ir a la página para subir actualizaciones del período.</p>
-            <a href="{{ route('actualizaciones.create') }}" class="btn btn-primary">Subir</a>
+            <a href="{{ route('docencia.actualizaciones.registrar') }}" class="btn btn-primary">Subir</a>
         </div>
     </div>
 </div>
@@ -36,7 +36,7 @@
                     <tr class="text-center">
                         <td>{{ $actualizacion->created_at }}</td>
                         <td>{{ $actualizacion->periodo->descripcion }}</td>
-                        <td class="text-left"><u><strong><a class="text-dark" href="{{route('actualizaciones.show', ['id' => $actualizacion->id])}}">{{ $actualizacion->nombre_curso }}</a></strong></u></td>
+                        <td class="text-left"><u><strong><a class="text-dark" href="{{route('docencia.actualizaciones.ver', ['id' => $actualizacion->id])}}">{{ $actualizacion->nombre_curso }}</a></strong></u></td>
                         @switch($actualizacion->id_status)
                         @case(1)
                         <td class="bg-warning"><strong>{{ $actualizacion->status->nombre}}</strong></td>
@@ -47,7 +47,7 @@
                         @case(3)
                         <td class="text-danger">
                             <strong>{{ $actualizacion->status->nombre}}</strong>
-                            <u><a class="text-danger" href="{{route('actualizaciones.show', ['id' => $actualizacion->id])}}">Ver respuesta</a></u>
+                            <u><a class="text-danger" href="{{route('docencia.actualizaciones.ver', ['id' => $actualizacion->id])}}">Ver respuesta</a></u>
                         </td>
                         @break
                         @default

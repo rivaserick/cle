@@ -1,1 +1,1 @@
-<a class="nav-link" href="{{route('actualizaciones.index')}}">Actualización docente</a>
+<a class="nav-link" href="{{route('docencia.actualizaciones.inicio')}}">Actualización docente</a>

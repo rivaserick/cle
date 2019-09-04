@@ -67,7 +67,7 @@
         @default
 
     @endswitch
-    <a href="{{route('actualizaciones.index')}}" class="btn btn-secondary">Regresar</a>
+    <a href="{{route('docencia.actualizaciones.inicio')}}" class="btn btn-secondary">Regresar</a>
 </div>
 <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
 @endsection

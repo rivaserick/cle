@@ -1,6 +1,5 @@
 <?php
 
-use App\Coordinador;
 use Illuminate\Support\Facades\Hash;
 /*
 |--------------------------------------------------------------------------
@@ -13,89 +12,43 @@ use Illuminate\Support\Facades\Hash;
 |
  */
 
-$coord_actualizaciones = [
-    'index' => 'coordinacion.actualizaciones.index',
-    'create' => 'coordinacion.actualizaciones.create',
-    'store' => 'coordinacion.actualizaciones.store',
-    'edit' => 'coordinacion.actualizaciones.edit',
-    'update' => 'coordinacion.actualizaciones.update',
-    'show' => 'coordinacion.actualizaciones.show',
-    'destroy' => 'coordinacion.actualizaciones.destroy',
-];
-
-$coord_observacion = [
-    'index' => 'coordinacion.observacion.index',
-    'create' => 'coordinacion.observacion.create',
-    'store' => 'coordinacion.observacion.store',
-    'edit' => 'coordinacion.observacion.edit',
-    'update' => 'coordinacion.observacion.update',
-    'show' => 'coordinacion.observacion.show',
-    'destroy' => 'coordinacion.observacion.destroy',
-];
-
-$coord_ajustes = [
-    'index' => 'coordinacion.ajustes.index',
-    'create' => 'coordinacion.ajustes.create',
-    'store' => 'coordinacion.ajustes.store',
-    'edit' => 'coordinacion.ajustes.edit',
-    'update' => 'coordinacion.ajustes.update',
-    'show' => 'coordinacion.ajustes.show',
-    'destroy' => 'coordinacion.ajustes.destroy',
-];
-
 Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::post('/home', 'HomeController@resetPassword')->name('home');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/home', 'HomeController@resetPassword')->name('home');
 
 Route::get('coordinacion', function () {return view('coordinacion.index');})->name('coordinacion');
-Route::resource('coordinacion/actualizaciones', 'coordinacion\actualizacionesController')->names($coord_actualizaciones);
-Route::resource('coordinacion/observacion', 'coordinacion\observacionController')->names($coord_observacion);
-Route::get('coordinacion/ajustes', 'coordinacion\ajustesController@index')->name('coordinacion.ajustes.index');
-Route::post('coordinacion/ajustes/agregarPeriodo', 'coordinacion\ajustesController@agregarPeriodo')
-    ->name('coordinacion.ajustes.agregarPeriodo');
-Route::post('coordinacion/ajustes/establecerPeriodoVigente', 'coordinacion\ajustesController@establecerPeriodoVigente')
-    ->name('coordinacion.ajustes.establecerPeriodoVigente');
-Route::post('coordinacion/ajustes/altaDocentesActivos', 'coordinacion\ajustesController@altaDocentesActivos')
-    ->name('coordinacion.ajustes.altaDocentesActivos');
-Route::resource('actualizaciones', 'actualizacionesController');
-Route::resource('observacion', 'observacionController');
 
-Route::get('seed', function () {
+Route::group(['prefix' => 'coordinacion', 'as' => 'coordinacion.', 'namespace' => 'coordinacion'], function () {
+    Route::group(['prefix' => 'ajustes', 'as' => 'ajustes.'], function () {
+        Route::get('inicio', 'ajustesController@inicio')->name('inicio');
+        Route::post('agregarPeriodo', 'ajustesController@agregarPeriodo')->name('agregarPeriodo');
+        Route::post('periodoVigente', 'ajustesController@periodoVigente')->name('periodoVigente');
+        Route::post('altaDocentesActivos', 'ajustesController@altaDocentesActivos')->name('altaDocentesActivos');
+    });
+    Route::group(['prefix' => 'actualizaciones', 'as' => 'actualizaciones.'], function () {
+        Route::get('inicio', 'actualizacionesController@inicio')->name('inicio');
+        Route::get('ver/{id}', 'actualizacionesController@ver')->name('ver');
+        Route::post('guardar', 'actualizacionesController@guardar')->name('guardar');
+        Route::post('reportes', 'actualizacionesController@reportes')->name('reportes');
+    });
+});
 
-    $filename = base_path('database/seeders/coordinadors.csv');
-    $delimitor = ',';
+Route::group(['prefix' => 'docencia', 'as' => 'docencia.'], function () {
+    Route::group(['prefix' => 'actualizaciones', 'as' => 'actualizaciones.'], function () {
+        Route::get('inicio', 'actualizacionesController@inicio')->name('inicio');
+        Route::get('registrar', 'actualizacionesController@registrar')->name('registrar');
+        Route::post('guardar', 'actualizacionesController@guardar')->name('guardar');
+        Route::get('ver/{id}', 'actualizacionesController@ver')->name('ver');
+    });
+});
 
-    Coordinador::truncate();
-
-    if (!file_exists($filename) || !is_readable($filename)) {
-        return false;
-    }
-    $header = null;
-    $row = null;
-
-    if (($handle = fopen($filename, 'r')) !== false) {
-        while (($row = fgetcsv($handle, 1000, $delimitor)) !== false) {
-            if (!$header) {
-                $header = $row;
-            } else {
-
-                $seed = new Coordinador; // 
-
-                $seed->id = $row[0];
-                $seed->id_user = $row[1];
-                $seed->created_at = $row[2];
-                $seed->updated_at = $row[3];
-
-                $seed->save();
-                echo var_dump($row);
-            }
-        }
-        fclose($handle);
-    }
+Route::group(['prefix' => 'observacion', 'namespace' => 'Auth'], function () {
+    Route::get('login', 'ObservacionLoginController@showLoginForm')->name('observacion.login');
+    Route::post('login', 'ObservacionLoginController@login')->name('observacion.login');
+    Route::post('logout', 'ObservacionLoginController@logout')->middleware('observacion')->name('observacion.logout');
 });

@@ -68,7 +68,7 @@
                             <div class="card-footer bg-warning">
                                 <div class="row">
                                     <div class="col-6">
-                                        <form action="{{route('coordinacion.actualizaciones.update', ['id' => $actualizacion->id])}}"
+                                        <form action="{{route('coordinacion.actualizaciones.guardar', ['id' => $actualizacion->id])}}"
                                             method="post">
                                             @method('PUT')
                                             @csrf
@@ -77,7 +77,7 @@
                                         </form>
                                     </div>
                                     <div class="col-6">
-                                        <form action="{{route('coordinacion.actualizaciones.show', ['id' => $actualizacion->id])}}"
+                                        <form action="{{route('coordinacion.actualizaciones.ver', ['id' => $actualizacion->id])}}"
                                             method="get">
                                             <button type="submit" class="btn btn-danger btn-block">Rechazar</button>
                                         </form>

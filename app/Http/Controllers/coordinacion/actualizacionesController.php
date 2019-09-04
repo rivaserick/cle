@@ -28,7 +28,7 @@ class actualizacionesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function inicio()
     {
         $actualizaciones = Actualizacion::all();
 
@@ -37,14 +37,59 @@ class actualizacionesController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Display the specified resource.
      *
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function ver($id)
     {
-        //
+        if($id == 'todas'){
+            $actualizaciones = Actualizacion::all();
+            return \view('coordinacion.actualizaciones.todas')
+                ->with('actualizaciones', $actualizaciones);
+        } else if($id == 'pendientes'){
+            $actualizaciones = Actualizacion::where('id_status', 1)->get();
+            return \view('coordinacion.actualizaciones.pendientes')
+                ->with('actualizaciones', $actualizaciones);
+        } else if($id == 'detalles'){
+            $actualizaciones = Actualizacion::all();
+            return \view('coordinacion.actualizaciones.detalles')
+                ->with('actualizaciones', $actualizaciones);
+        } 
+
+        $actualizacion = Actualizacion::find($id);
+        $mensajes = Mensaje::where('id_actualizacion', $id)->get();
+        return \view('coordinacion.actualizaciones.show')
+            ->with([
+            'actualizacion' => $actualizacion,
+            'mensajes' => $mensajes,
+        ]);
     }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function guardar(Request $request, $id)
+    {
+        $actualizacion = Actualizacion::find($id);
+        $actualizacion->id_status = \request('id_status');
+
+        if(\request('id_status')==3){
+            $mensaje = new Mensaje;
+            $mensaje->mensaje = \request('mensaje');
+            $mensaje->id_actualizacion = $id;
+            $mensaje->save();
+        }
+
+        $actualizacion->save();
+        return ActualizacionesController::index();
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -52,7 +97,7 @@ class actualizacionesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function reportes(Request $request)
     {
         switch (\request('reporte')) {
             case 'actualizaciones':
@@ -97,84 +142,6 @@ class actualizacionesController extends Controller
                 # code...
                 break;
         }
-
-
-
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        if($id == 'todas'){
-            $actualizaciones = Actualizacion::all();
-            return \view('coordinacion.actualizaciones.todas')
-                ->with('actualizaciones', $actualizaciones);
-        } else if($id == 'pendientes'){
-            $actualizaciones = Actualizacion::where('id_status', 1)->get();
-            return \view('coordinacion.actualizaciones.pendientes')
-                ->with('actualizaciones', $actualizaciones);
-        } else if($id == 'detalles'){
-            $actualizaciones = Actualizacion::all();
-            return \view('coordinacion.actualizaciones.detalles')
-                ->with('actualizaciones', $actualizaciones);
-        } 
-
-        $actualizacion = Actualizacion::find($id);
-        $mensajes = Mensaje::where('id_actualizacion', $id)->get();
-        return \view('coordinacion.show')
-            ->with([
-            'actualizacion' => $actualizacion,
-            'mensajes' => $mensajes,
-        ]);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        $actualizacion = Actualizacion::find($id);
-        $actualizacion->id_status = \request('id_status');
-
-        if(\request('id_status')==3){
-            $mensaje = new Mensaje;
-            $mensaje->mensaje = \request('mensaje');
-            $mensaje->id_actualizacion = $id;
-            $mensaje->save();
-        }
-
-        $actualizacion->save();
-        return ActualizacionesController::index();
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

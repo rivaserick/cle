@@ -13,11 +13,22 @@ use Validator;
 
 class observacionController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('observacion');
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function inicio(){
+        return 'inicio';
+
+    }
+
     public function index()
     {
         /*$observador = new Observador;

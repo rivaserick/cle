@@ -12,7 +12,7 @@
             <div class="collapse navbar-collapse text-center justify-content-center" id="nav-coordinacion">
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
-                        <a class="btn btn-outline-primary btn-lg navbar-btn ml-md-2" href="{{route('coordinacion.actualizaciones.index')}}">
+                        <a class="btn btn-outline-primary btn-lg navbar-btn ml-md-2" href="{{route('coordinacion.actualizaciones.inicio')}}">
                             Actualizaciones
                         </a>
                     </li>

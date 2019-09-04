@@ -22,17 +22,17 @@
                     <td class="text-center"><strong>
                     @switch($actualizacion->id_status)
                     @case(1)
-                    <u><a class="text-dark" href="{{route('coordinacion.actualizaciones.show', ['id' => $actualizacion->id])}}">
+                    <u><a class="text-dark" href="{{route('coordinacion.actualizaciones.ver', ['id' => $actualizacion->id])}}">
                             {{ $actualizacion->nombre_curso }}
                     </a></u>
                     @break
                     @case(2)                    
-                    <u><a class="text-success" href="{{route('coordinacion.actualizaciones.show', ['id' => $actualizacion->id])}}">
+                    <u><a class="text-success" href="{{route('coordinacion.actualizaciones.ver', ['id' => $actualizacion->id])}}">
                             {{ $actualizacion->nombre_curso }}
                     </a></u>
                     @break
                     @case(3)
-                    <u><a class="text-danger" href="{{route('coordinacion.actualizaciones.show', ['id' => $actualizacion->id])}}">
+                    <u><a class="text-danger" href="{{route('coordinacion.actualizaciones.ver', ['id' => $actualizacion->id])}}">
                             {{ $actualizacion->nombre_curso }}
                     </a></u>
                     @break
@@ -51,7 +51,7 @@
                     @case(3)
                     <td class="text-danger">
                         <strong><u>
-                            <a class="text-danger" href="{{route('coordinacion.actualizaciones.show', ['id' => $actualizacion->id])}}">
+                            <a class="text-danger" href="{{route('coordinacion.actualizaciones.ver', ['id' => $actualizacion->id])}}">
                             {{ $actualizacion->status->nombre}}</a>
                         </u></strong>
                     </td>

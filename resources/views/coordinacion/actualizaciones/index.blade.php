@@ -5,16 +5,16 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-4 mb-1">
-            <a class="btn btn-warning btn-block" href="{{route('coordinacion.actualizaciones.show', ['id' => 'pendientes'])}}">Actualizaciones pendientes</a>
+            <a class="btn btn-warning btn-block" href="{{route('coordinacion.actualizaciones.ver', ['id' => 'pendientes'])}}">Actualizaciones pendientes</a>
         </div>
         <div class="col-12 col-md-4 mb-1">
-            <a class="btn btn-primary btn-block" href="{{route('coordinacion.actualizaciones.show', ['id' => 'todas'])}}">Todas las actualizaciones</a>
+            <a class="btn btn-primary btn-block" href="{{route('coordinacion.actualizaciones.ver', ['id' => 'todas'])}}">Todas las actualizaciones</a>
         </div>
         <div class="col-12 col-md-4 mb-1">
-            <a class="btn btn-success btn-block" href="{{route('coordinacion.actualizaciones.show', ['id' => 'detalles'])}}">Vista detallada</a>
+            <a class="btn btn-success btn-block" href="{{route('coordinacion.actualizaciones.ver', ['id' => 'detalles'])}}">Vista detallada</a>
         </div>
     </div>
-    <form class="form-group text-center" action="{{route('coordinacion.actualizaciones.store')}}" method="post">
+    <form class="form-group text-center" action="{{route('coordinacion.actualizaciones.reportes')}}" method="post">
         @csrf
         <button class="btn btn-dark mb-1" type="submit" name="reporte" value="actualizaciones">Descargar reporte de
             ACTUALIZACIONES</button>

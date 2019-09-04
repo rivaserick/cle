@@ -53,7 +53,7 @@
             <div class="card-footer">
                     <div class="row">
                         <div class="col-6">
-                            <form action="{{route('coordinacion.actualizaciones.update', ['id' => $actualizacion->id])}}" method="post">
+                            <form action="{{route('coordinacion.actualizaciones.guardar', ['id' => $actualizacion->id])}}" method="post">
                                 @method('PUT')
                                 @csrf
                                 <button type="submit" name="id_status" value="2"
@@ -61,7 +61,7 @@
                             </form>
                         </div>
                         <div class="col-6">
-                            <form action="{{route('coordinacion.actualizaciones.update', ['id' => $actualizacion->id])}}" method="post">
+                            <form action="{{route('coordinacion.actualizaciones.guardar', ['id' => $actualizacion->id])}}" method="post">
                                 @method('PUT')
                                 @csrf
                                 <button type="submit" class="btn btn-danger btn-block" name="id_status" value="3">Rechazar</button>
@@ -97,7 +97,7 @@
             @default
                 
         @endswitch
-        <a href="{{route('coordinacion.actualizaciones.index')}}" class="btn btn-secondary">Regresar</a> 
+        <a href="{{route('coordinacion.actualizaciones.inicio')}}" class="btn btn-secondary">Regresar</a> 
 </div>
 <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
 

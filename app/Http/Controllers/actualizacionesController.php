@@ -31,7 +31,7 @@ class actualizacionesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function inicio()
     {
         //$status = new Status;
         //$status->nombre = 'Rechazada';
@@ -41,7 +41,7 @@ class actualizacionesController extends Controller
             ->with(['periodo', 'status'])
             ->get();
 
-        return \view('actualizaciones.index')
+        return \view('docencia.actualizaciones.index')
             ->with('actualizaciones', $actualizaciones);
     }
 
@@ -50,13 +50,13 @@ class actualizacionesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function registrar()
     {
 
         $lineasCapacitacion = LineaCapacitacion::all();
         $sublineasCapacitacion = sublineaCapacitacion::all();
 
-        return \view('actualizaciones.create')
+        return \view('docencia.actualizaciones.create')
             ->with([
                 'lineasCapacitacion' => $lineasCapacitacion,
                 'sublineasCapacitacion' => $sublineasCapacitacion,
@@ -69,7 +69,7 @@ class actualizacionesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function guardar(Request $request)
     {
         $reglas = array(
             'nombre_curso' => 'required',
@@ -91,7 +91,7 @@ class actualizacionesController extends Controller
         
         if ($validator->fails()) {
             
-            return route('actualizaciones.create')
+            return route('docencia.actualizaciones.create')
             ->withErrors($validacion)
             ->withInput($request->all());
             
@@ -137,48 +137,14 @@ class actualizacionesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function ver($id)
     {
         $actualizacion = Actualizacion::find($id);
         $mensajes = Mensaje::where('id_actualizacion', $id)->get();
-        return \view('actualizaciones.show')
+        return \view('docencia.actualizaciones.show')
             ->with([
                 'actualizacion' => $actualizacion,
                 'mensajes' => $mensajes,
             ]);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }

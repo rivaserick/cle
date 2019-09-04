@@ -22,7 +22,7 @@ class ajustesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function inicio()
     {
         $periodos = Period::orderBy('id')->get();
         return \view('coordinacion.ajustes.index')

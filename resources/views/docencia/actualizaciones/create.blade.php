@@ -7,7 +7,7 @@
     @foreach ($errors->all() as $error)
         <div class="alert alert-danger alert-small">{{ $error }}</div>
     @endforeach
-    <form enctype="multipart/form-data" method="POST" action="{{ route('actualizaciones.store') }}">
+    <form enctype="multipart/form-data" method="POST" action="{{ route('docencia.actualizaciones.guardar') }}">
         @csrf
         <div class="row">
             <div class="col-sm-5 mb-3 col-12">
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="text-center form-group">
-            <a href="{{ route('actualizaciones.index') }}" class="btn btn-danger">Cancelar</a>
+            <a href="{{ route('docencia.actualizaciones.inicio') }}" class="btn btn-danger">Cancelar</a>
             <button class="btn btn-primary" type="submit">Subir actualización</button>
         </div>
     </form>

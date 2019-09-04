@@ -46,6 +46,16 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'observacion' => [
+            'driver' => 'session',
+            'provider' => 'observadors',
+        ],
+
+        'api-observacion' => [
+            'driver' => 'token',
+            'provider' => 'observadors',
+            'hash' => false,
+        ],
     ],
 
     /*
@@ -69,6 +79,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        'observadors' => [
+            'driver' => 'eloquent',
+            'model' => App\Observador::class,
         ],
 
         // 'users' => [
@@ -95,6 +109,12 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+
+        'observadors' => [
+            'provider' => 'observadors',
             'table' => 'password_resets',
             'expire' => 60,
         ],
