@@ -37,7 +37,7 @@ class actualizacionesController extends Controller
         //$status->nombre = 'Rechazada';
         //$status->save();
 
-        $actualizaciones = Actualizacion::where('id_profesor', Auth::id())
+        $actualizaciones = Actualizacion::where('id_profesor', auth()->guard('docencia')->id())
             ->with(['periodo', 'status'])
             ->get();
 
@@ -97,7 +97,7 @@ class actualizacionesController extends Controller
             
         } else {
             
-            $id_profesor = Auth::id();
+            $id_profesor = auth()->guard('docencia')->id();
             $actualizacion = new Actualizacion;
 
             $actualizacion->nombre_curso = \request('nombre_curso');
