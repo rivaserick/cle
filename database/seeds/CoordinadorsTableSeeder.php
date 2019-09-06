@@ -35,6 +35,9 @@ class CoordinadorsTableSeeder extends Seeder
                     $seed->id_user = $row[1];
                     $seed->created_at = $row[2];
                     $seed->updated_at = $row[3];
+                    $seed->username = $row[4];
+                    $seed->password = $row[5];
+                    $seed->nombre = $row[6];
 
                     $seed->save();
                     echo var_dump($row);

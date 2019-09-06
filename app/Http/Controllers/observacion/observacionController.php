@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Observacion;
 
+use App\Http\Controllers\Controller;
 use App\Observador;
 use App\Observacion;
 use App\Profesor;
@@ -16,7 +17,7 @@ class observacionController extends Controller
 
     public function __construct()
     {
-        $this->middleware('observacion');
+        $this->middleware('auth:observacion');
     }
     /**
      * Display a listing of the resource.
@@ -25,19 +26,9 @@ class observacionController extends Controller
      */
 
     public function inicio(){
-        return 'inicio';
-
-    }
-
-    public function index()
-    {
-        /*$observador = new Observador;
-        $observador->nombre = "Juan Perez";
-        $observador->save();*/
-
-        $obs = Observador::all();
+        $observaciones = Observacion::all();
         return \view('observacion.index')
-            ->with('actualizaciones', $obs);
+            ->with('observaciones', $observaciones);
     }
 
     /**
@@ -45,7 +36,7 @@ class observacionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function registrar()
     {
         $profesores = Profesor::all();
         return \view('observacion.create')
@@ -58,8 +49,9 @@ class observacionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function guardar(Request $request)
     {
+        return $request->all();
         $reglas = array(
             'nombre_del_docente' => [
                 'required',

@@ -14,8 +14,7 @@ class ajustesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
-        $this->middleware('clase:3');
+        $this->middleware('auth:coordinacion');
     }
     /**
      * Display a listing of the resource.
@@ -46,7 +45,7 @@ class ajustesController extends Controller
 
         if ($validator->fails()) {
 
-            return route('coordinacion.ajustes.index')
+            return route('coordinacion.ajustes.inicio')
                 ->withErrors($validacion)
                 ->withInput($request->all());
 
@@ -61,11 +60,11 @@ class ajustesController extends Controller
 
             Session::flash('message', 'Período registrado correctamente.');
 
-            return redirect()->route('coordinacion.ajustes.index');
+            return redirect()->route('coordinacion.ajustes.inicio');
         }
     }
 
-    public function establecerPeriodoVigente(Request $request)
+    public function periodoVigente(Request $request)
     {
 
         $reglas = array(
@@ -81,7 +80,7 @@ class ajustesController extends Controller
 
         if ($validator->fails()) {
 
-            return route('coordinacion.ajustes.index')
+            return route('coordinacion.ajustes.inicio')
                 ->withErrors($validacion)
                 ->withInput($request->all());
 
@@ -93,7 +92,7 @@ class ajustesController extends Controller
 
             Session::flash('message', 'El período se estableció correctamente como vigente.');
 
-            return redirect()->route('coordinacion.ajustes.index');
+            return redirect()->route('coordinacion.ajustes.inicio');
         }
     }
 
@@ -101,71 +100,5 @@ class ajustesController extends Controller
     {
         //$path = $request->file('archivo_docentes')->store('public/archivo_docente/');
         return 'En construccion...';
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }

@@ -50,10 +50,29 @@ return [
             'driver' => 'session',
             'provider' => 'observadors',
         ],
-
         'api-observacion' => [
             'driver' => 'token',
             'provider' => 'observadors',
+            'hash' => false,
+        ],
+        'coordinacion' => [
+            'driver' => 'session',
+            'provider' => 'coordinadors',
+        ],
+
+        'api-coordinacion' => [
+            'driver' => 'token',
+            'provider' => 'coordinadors',
+            'hash' => false,
+        ],
+        'docencia' => [
+            'driver' => 'session',
+            'provider' => 'profesors',
+        ],
+
+        'api-docencia' => [
+            'driver' => 'token',
+            'provider' => 'profesors',
             'hash' => false,
         ],
     ],
@@ -83,6 +102,14 @@ return [
         'observadors' => [
             'driver' => 'eloquent',
             'model' => App\Observador::class,
+        ],
+        'coordinadors' => [
+            'driver' => 'eloquent',
+            'model' => App\Coordinador::class,
+        ],
+        'profesors' => [
+            'driver' => 'eloquent',
+            'model' => App\Profesor::class,
         ],
 
         // 'users' => [
@@ -115,6 +142,16 @@ return [
 
         'observadors' => [
             'provider' => 'observadors',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'coordinadors' => [
+            'provider' => 'coordinadors',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'profesors' => [
+            'provider' => 'profesors',
             'table' => 'password_resets',
             'expire' => 60,
         ],

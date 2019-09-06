@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-class ObservacionLoginController extends Controller
+class DocenciaLoginController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -25,7 +25,7 @@ class ObservacionLoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/observacion/inicio';
+    protected $redirectTo = '/docencia/inicio';
 
     /**
      * Create a new controller instance.
@@ -44,12 +44,12 @@ class ObservacionLoginController extends Controller
 
     public function guard()
     {
-        return auth()->guard('observacion');
+        return auth()->guard('docencia');
     }
 
     // login from for observador
     public function showLoginForm()
     {
-        return view('auth.observacion.login');
+        return view('auth.docencia.login');
     }
 }

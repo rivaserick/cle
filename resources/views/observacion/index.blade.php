@@ -9,12 +9,12 @@
     <div class="card text-center">
         <div class="card-body">
             <p class="card-text">Ir a la página para subir observaciones del período.</p>
-            <a href="{{ route('observacion.create') }}" class="btn btn-primary">Subir</a>
+            <a href="{{ route('observacion.registrar') }}" class="btn btn-primary">Subir</a>
         </div>
     </div>
 </div>
 <div class="container">
-    @if ($actualizaciones->isEmpty())
+    @if ($observaciones->isEmpty())
         <h2 class="text-center text-uppercase py-2">No has registrado observaciones aún.</h2>
     @else
         <h2 class="text-center text-uppercase py-2">Observaciones registradas</h2>
@@ -27,10 +27,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($actualizaciones as $key => $actualizacion)
+                    @foreach($observaciones as $key => $observacion)
                     <tr class="text-center">
-                        <td>{{ $actualizacion->id }}</td>
-                        <td>{{ $actualizacion->nombre }}</td>
+                        <td>{{ $observacion->id }}</td>
+                        <td>{{ $observacion->nombre }}</td>
                     </tr>
                     @endforeach
                 </tbody>

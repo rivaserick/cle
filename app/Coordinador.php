@@ -2,9 +2,17 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Profesor;
+use App\Coordinador;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Coordinador extends Model
+class Coordinador extends Authenticatable
 {
+    use Notifiable;
+
+    protected $guard = 'coordinacion';
+
     protected $guarded = [];
 }

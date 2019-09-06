@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Docencia;
 
+use App\Http\Controllers\Controller;
 use App\Actualizacion;
 use App\LineaCapacitacion;
 use App\Mensaje;
@@ -22,8 +23,7 @@ class actualizacionesController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
-        $this->middleware('clase:1');
+        $this->middleware('docencia');
     }
 
     /**

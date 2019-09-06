@@ -53,7 +53,7 @@
             </form>
             <hr>
             <label>Seleccionar período vigente</label>
-            <form class="form-row" method="POST" action="{{route('coordinacion.ajustes.establecerPeriodoVigente')}}">
+            <form class="form-row" method="POST" action="{{route('coordinacion.ajustes.periodoVigente')}}">
                 @csrf
                 <div class="col-12 col-lg-9">
                     <select name="periodo_vigente" id="periodo_vigente" class="form-control mb-2">
