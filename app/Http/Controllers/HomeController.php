@@ -29,7 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (!Auth::user()->password_changed) {
+        if (true ||!Auth::user()->password_changed) {
             return view('auth.passwords.reset')
                 ->with('token', Str::random(60));
         } else {

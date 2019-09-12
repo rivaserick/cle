@@ -22,15 +22,23 @@
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr class="text-center text-uppercase lead">
-                        <td>ID</td>
-                        <td>Nombre</td>
+                        <td>Fecha</td>
+                        <td>Grupo</td>
+                        <td>Docente</td>
+                        <td>Acciones</td>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach($observaciones as $key => $observacion)
                     <tr class="text-center">
-                        <td>{{ $observacion->id }}</td>
-                        <td>{{ $observacion->nombre }}</td>
+                        <td>{{ $observacion->fecha }}</td>
+                        <td>{{ $observacion->grupo->grupo }}</td>
+                        <td>{{ $observacion->grupo->profesor->nombre }}</td>
+                        @if ($observacion->fecha_feedback)
+                            <td>Retroalimentada</td>
+                        @else
+                            <td><a href="#">Retro</a></td>                            
+                        @endif
                     </tr>
                     @endforeach
                 </tbody>

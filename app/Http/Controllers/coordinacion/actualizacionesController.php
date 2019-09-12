@@ -19,7 +19,7 @@ class actualizacionesController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:coordinacion');
+        $this->middleware('coordinacion');
     }
 
     /**

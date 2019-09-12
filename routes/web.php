@@ -27,6 +27,8 @@ Route::group(['prefix' => 'coordinacion', 'as' => 'coordinacion.', 'namespace' =
         Route::get('inicio', 'ajustesController@inicio')->name('inicio');
         Route::post('agregarPeriodo', 'ajustesController@agregarPeriodo')->name('agregarPeriodo');
         Route::post('periodoVigente', 'ajustesController@periodoVigente')->name('periodoVigente');
+        Route::post('agregarCategoriaObservaciones', 'ajustesController@agregarCategoriaObservaciones')->name('agregarCategoriaObservaciones');
+        Route::post('agregarItemCategoria', 'ajustesController@agregarItemCategoria')->name('agregarItemCategoria');
         Route::post('altaDocentesActivos', 'ajustesController@altaDocentesActivos')->name('altaDocentesActivos');
     });
     Route::group(['prefix' => 'actualizaciones', 'as' => 'actualizaciones.', ], function () {

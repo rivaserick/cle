@@ -4,6 +4,8 @@ namespace App\Http\Controllers\coordinacion;
 
 use App\Http\Controllers\Controller;
 use App\Period;
+use App\Item;
+use App\Categoria;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
@@ -14,7 +16,7 @@ class ajustesController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:coordinacion');
+        $this->middleware('coordinacion');
     }
     /**
      * Display a listing of the resource.
@@ -23,11 +25,13 @@ class ajustesController extends Controller
      */
     public function inicio()
     {
+        $categorias = Categoria::orderBy('id')->get();
         $periodos = Period::orderBy('id')->get();
         return \view('coordinacion.ajustes.index')
-            ->with(
-                'periodos', $periodos
-            );
+            ->with([
+                'periodos' => $periodos,
+                'categorias' => $categorias,
+            ]);
     }
 
     public function agregarPeriodo(Request $request)
@@ -91,6 +95,62 @@ class ajustesController extends Controller
                 ->update(['vigente' => true]);
 
             Session::flash('message', 'El período se estableció correctamente como vigente.');
+
+            return redirect()->route('coordinacion.ajustes.inicio');
+        }
+    }
+
+    public function agregarCategoriaObservaciones(Request $request)
+    {
+        $reglas = array(
+            'nombre_categoria' => 'required|unique:categorias',
+        );
+
+        $validator = Validator::make($request->all(), $reglas);
+
+        $validacion = $validator->validate();
+
+        if ($validator->fails()) {
+
+            return route('coordinacion.ajustes.inicio')
+                ->withErrors($validacion)
+                ->withInput($request->all());
+
+        } else {
+            Categoria::create([
+                'nombre_categoria' => \request('nombre_categoria'),
+            ]);
+
+            Session::flash('message', 'Categoría registrada correctamente.');
+
+            return redirect()->route('coordinacion.ajustes.inicio');
+        }
+    }
+
+    public function agregarItemCategoria(Request $request)
+    {
+        $reglas = array(
+            'id_categoria' => 'required|integer',
+            'texto_item' => 'required|unique:items',
+        );
+
+        $validator = Validator::make($request->all(), $reglas);
+
+        $validacion = $validator->validate();
+
+        if ($validator->fails()) {
+
+            return route('coordinacion.ajustes.inicio')
+                ->withErrors($validacion)
+                ->withInput($request->all());
+
+        } else {
+            Item::create([
+                'id_categoria' => \request('id_categoria'),
+                'texto_item' => \request('texto_item'),
+            ]);
+
+            Session::flash('message', 'Ítem registrado correctamente.');
 
             return redirect()->route('coordinacion.ajustes.inicio');
         }

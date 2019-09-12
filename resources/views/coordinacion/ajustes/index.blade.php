@@ -9,7 +9,7 @@
     @foreach ($errors->all() as $error)
     <div class="alert alert-danger alert-small">{{ $error }}</div>
     @endforeach
-    <div class="card">
+    <div class="card m-2 border-dark">
         <div class="card-header lead">Período de clases</div>
         <div class="card-body">
             <label>Agregar un nuevo período de clases</label>
@@ -17,8 +17,8 @@
                 @csrf
                 <div class="col-12 col-lg-2">
                     <label class="sr-only" for="nombre">Nombre del período</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="nombre"
-                        name="nombre" placeholder="Ej: 1903" value="{{old('nombre')}}">
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="nombre" name="nombre"
+                        placeholder="Ej: 1903" value="{{old('nombre')}}">
                 </div>
 
                 <div class="col-12 col-lg-2">
@@ -61,7 +61,7 @@
                         <option value="{{$periodo->id}}">
                             {{$periodo->nombre}} - {{$periodo->descripcion}}
                             @if ($periodo->vigente)
-                                (Vigente)                                
+                            (Vigente)
                             @endif
                         </option>
                         @endforeach
@@ -71,12 +71,61 @@
                     <button class="btn btn-primary mb-2 btn-block" type="submit">Establecer como vigente</button>
                 </div>
             </form>
-
         </div>
-
-
     </div>
-    <div class="card">
+    <hr>
+    <div class="card m-2 border-dark">
+        <div class="card-header lead">Ajustes de observación docente</div>
+        <div class="card-body">
+            <label>Agregar una nueva categoria de observación de clases</label>
+            <form class="form-row" action="{{route('coordinacion.ajustes.agregarCategoriaObservaciones')}}"
+                method="POST">
+                @csrf
+                <div class="col-12 col-lg-10">
+                    <label class="sr-only" for="nombre_categoria">Nombre de la categoría</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="nombre_categoria" name="nombre_categoria"
+                        placeholder="Ej: TEACHING APPROACHES" value="{{old('nombre_categoria')}}">
+                </div>
+                <div class="col-12 col-lg-2">
+                    <button type="submit" class="btn btn-primary mb-2 btn-block">Guardar</button>
+                </div>
+            </form>
+            <hr>
+            <label>Agregar un nuevo ítem de observación de clases</label>
+            <form class="form-row" action="{{route('coordinacion.ajustes.agregarItemCategoria')}}" method="POST">
+                @csrf
+                <div class="col-12 col-lg-12">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Texto del ítem</span>
+                        </div>
+                        <textarea class="form-control" name="texto_item" id="texto_item" rows="2"
+                            required>{{old('texto_item')}}</textarea>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 py-2">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="categorias_item">Categoría:</label>
+                        </div>
+                        <select class="form-control" id="id_categorias" name="id_categoria">
+                            @foreach ($categorias as $categoria)
+                            <option value="{{$categoria->id}}">
+                                {{$categoria->nombre_categoria}}
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 py-2">
+                    <button type="submit" class="btn btn-primary mb-2 btn-block">Agregar</button>
+                </div>
+            </form>
+            <hr>
+        </div>
+    </div>
+    <hr>
+    <div class="card m-2 border-dark">
         <div class="card-header lead">Importar profesores activos a la base de datos (desde archivo .csv)</div>
         <div class="card-body">
             <form class="form-row" enctype="multipart/form-data" method="POST"
@@ -93,10 +142,7 @@
                     <button type="submit" class="btn btn-primary btn-block">Importar archivo</button>
                 </div>
         </div>
-
-
         </form>
     </div>
-</div>
 
-@endsection
+    @endsection

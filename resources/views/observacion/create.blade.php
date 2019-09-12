@@ -7,81 +7,110 @@
     @foreach ($errors->all() as $error)
     <div class="alert alert-danger alert-small">{{ $error }}</div>
     @endforeach
-    <form enctype="multipart/form-data" method="POST" action="{{ route('observacion.guardar') }}">
+    <form method="POST" action="{{ route('observacion.guardar') }}">
         @csrf
         <div class="row">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary">
-                    <input type="radio" name="0" id="option3" autocomplete="off"> 0
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="1" id="option1" autocomplete="off"> 1
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="2" id="option1" autocomplete="off"> 2
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="3" id="option2" autocomplete="off"> 3
-                </label>
-                <label class="btn btn-secondary">
-                    <input type="radio" name="4" id="option3" autocomplete="off"> 4
-                </label>
+            <div class="col-sm-4 mb-3 col-12">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="codigo_del_grupo">Grupo:</label>
+                    </div>
+                    <select class="custom-select" id="codigo_del_grupo" name="codigo_del_grupo" style="font-size: 75%"
+                        value="{{old('codigo_del_grupo')}}" placeholder="Seleccione..." onchange="mostrarDocente(this);"
+                        required>
+                        
+                        @foreach ($grupos as $grupo)
+                        <option value="{{$grupo->grupo}}">{{$grupo->grupo}}</option>
+                        @endforeach
+                    </select>
+                </div>
             </div>
             <div class="col-sm-8 mb-3 col-12">
-                <label for="nombre_del_docente">Nombre del docente</label>
-                <input type="text" class="form-control" name="nombre_del_docente" id="nombre_del_docente"
-                    placeholder="Nombre del docente" value="{{old('nombre_del_docente')}}" list="profesores" required>
-                <datalist id="profesores">
-                    @foreach ($profesores as $profesor)
-                    <option value="{{$profesor->nombre}}">{{$profesor->nombre}}</option>
-                    @endforeach
-                </datalist>
-            </div>
-            <div class="col-sm-4 mb-3 col-6">
-                <label for="codigo_del_grupo">Código del grupo</label>
-                <input type="text" class="form-control" name="codigo_del_grupo" id="codigo_del_grupo"
-                    placeholder="Código del grupo" value="{{old('codigo_del_grupo')}}" required>
-            </div>
-            <div class="col-sm-3 mb-3 col-6">
-                <label for="salon">Salón</label>
-                <input type="text" class="form-control" name="salon" id="salon" placeholder="Salón"
-                    value="{{old('salon')}}" required>
-            </div>
-            <div class="col-sm-3 mb-3 col-12">
-                <label for="fecha_de_observacion">Fecha de observación</label>
-                <input type="date" class="form-control" name="fecha_de_observacion" id="fecha_de_observacion"
-                    placeholder="Fecha" value="{{old('fecha_de_observacion')}}" required>
-            </div>
-            <div class="col-sm-3 mb-3 col-6">
-                <label for="hora_de_inicio">Hora de inicio</label>
-                <input type="time" class="form-control" name="hora_de_inicio" id="hora_de_inicio" placeholder="Inicio"
-                    value="{{old('hora_de_inicio')}}" required>
-            </div>
-            <div class="col-sm-3 mb-3 col-6">
-                <label for="hora_de_fin">Hora de fin</label>
-                <input type="time" class="form-control" name="hora_de_fin" id="hora_de_fin" placeholder="Fin"
-                    value="{{old('hora_de_fin')}}" required>
-            </div>
-            <div class="col-sm-4 mb-3 col-12">
-                <strong><label for="calificacion">Calificación (/80)</label></strong>
-                <input type="text" class="form-control input-lg" name="calificacion" id="calificacion"
-                    placeholder="Calificación" value="{{old('calificacion')}}" required>
-            </div>
-            <div class="col-sm-8 col-12">
-                <div class="form-group">
-                    <label for="observaciones">Observaciones (requeridas si la observación es menor a 5
-                        min)</label>
-                    <textarea class="form-control" name="observaciones" id="observaciones"
-                        rows="1">{{old('observaciones')}}</textarea>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Docente:</span>
+                    </div>
+                    <input type="text" class="form-control" name="nombre_del_docente" id="nombre_del_docente"
+                        value="{{old('nombre_del_docente')}}" disabled>
                 </div>
             </div>
         </div>
-        <div class="text-center form-group">
+        <ul class="list-group mb-3">
+            @foreach ($categorias as $categoria)
+            <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark">
+                {{$categoria->nombre_categoria}}
+            </li>
+            @foreach ($categoria->items as $item)
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{$item->texto_item}}
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-danger">
+                        <input type="radio" name="{{$item->id}}" value="0"><strong>0</strong>
+                    </label>
+                    <label class="btn btn-outline-dark">
+                        <input type="radio" name="{{$item->id}}" value="1"><strong>1</strong>
+                    </label>
+                    <label class="btn btn-outline-dark">
+                        <input type="radio" name="{{$item->id}}" value="2"><strong>2</strong>
+                    </label>
+                    <label class="btn btn-outline-dark">
+                        <input type="radio" name="{{$item->id}}" value="3"><strong>3</strong>
+                    </label>
+                    <label class="btn btn-success">
+                        <input type="radio" name="{{$item->id}}" value="4"><strong>4</strong>
+                    </label>
+                </div>
+            </li>
+            @endforeach
+            @endforeach
+        </ul>
+        <hr>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Strengths observed:</span>
+            </div>
+            <textarea class="form-control" id="strengths_observed" name="strengths_observed"
+                aria-label="strengths_observed" required>
+
+            </textarea>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Suggestions for improvement:</span>
+            </div>
+            <textarea class="form-control" id="suggestions_improvement" name="suggestions_improvement"
+                aria-label="suggestions_improvement" required>
+
+            </textarea>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">General observations:</span>
+            </div>
+            <textarea class="form-control" id="general_observations" name="general_observations"
+                aria-label="general_observations" required>
+
+            </textarea>
+        </div>
+        <div class="text-center form-group py-3">
             <a href="{{ route('observacion.inicio') }}" class="btn btn-danger">Cancelar</a>
-            <button class="btn btn-primary" type="submit">Completar registro</button>
+            <button class="btn btn-primary" type="submit">Completar registro de observación</button>
         </div>
     </form>
 </div>
 <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
-
+<script>
+    function mostrarDocente(valor) {
+        var grupo_seleccionado = $('#codigo_del_grupo').val();
+        var grupos = {!! json_encode($grupos->toArray()) !!};
+        var profesores = {!! json_encode($profesores->toArray()) !!};
+        var docente_grupo = grupos.find((x => x.grupo == grupo_seleccionado));
+        docente = profesores.find((x => x.id == docente_grupo.id_profesor));
+        $('#nombre_del_docente').val(docente.nombre);
+    }
+    $(document).ready(function () {
+        mostrarDocente($('#codigo_del_grupo').val());
+        $('#codigo_del_grupo').click(mostrarDocente($('#codigo_del_grupo').val));
+    });
+</script>
 @endsection
