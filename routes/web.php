@@ -93,13 +93,13 @@ Route::group(['prefix' => 'observacion', 'namespace' => 'Auth'], function () {
 });
 
 Route::group(['prefix' => 'coordinacion', 'namespace' => 'Auth'], function () {
-    Route::get('login', 'coordinacionLoginController@showLoginForm')->name('coordinacion.login');
-    Route::post('login', 'coordinacionLoginController@login')->name('coordinacion.login');
-    Route::post('logout', 'coordinacionLoginController@logout')->middleware('coordinacion')->name('coordinacion.logout');
+    Route::get('login', 'CoordinacionLoginController@showLoginForm')->name('coordinacion.login');
+    Route::post('login', 'CoordinacionLoginController@login')->name('coordinacion.login');
+    Route::post('logout', 'CoordinacionLoginController@logout')->middleware('coordinacion')->name('coordinacion.logout');
 });
 
 Route::group(['prefix' => 'docencia', 'namespace' => 'Auth'], function () {
-    Route::get('login', 'docenciaLoginController@showLoginForm')->name('docencia.login');
-    Route::post('login', 'docenciaLoginController@login')->name('docencia.login');
-    Route::post('logout', 'docenciaLoginController@logout')->middleware('docencia')->name('docencia.logout');
+    Route::get('login', 'DocenciaLoginController@showLoginForm')->name('docencia.login');
+    Route::post('login', 'DocenciaLoginController@login')->name('docencia.login');
+    Route::post('logout', 'DocenciaLoginController@logout')->middleware('docencia')->name('docencia.logout');
 });
