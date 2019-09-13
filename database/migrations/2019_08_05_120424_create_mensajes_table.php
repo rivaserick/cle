@@ -18,7 +18,7 @@ class CreateMensajesTable extends Migration
             $table->bigIncrements('id');
             $table->string('mensaje');
             $table->integer('id_actualizacion')->unsigned();
-            $table->foreign('id_actualizacion')->references('id')->on('actualizacions');
+            $table->foreign('id_actualizacion')->references('id')->on('actualizacions')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ class CreateProfesorsTable extends Migration
         Schema::create('profesors', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre')->after('id');
-            $table->string('mcer');
+            $table->string('mcer')->nullable();
             $table->string('username')->unique()->nullable()->default(null)->after('nombre');
             $table->string('password')->default('')->after('username');
             $table->string('original_password')->nullable();

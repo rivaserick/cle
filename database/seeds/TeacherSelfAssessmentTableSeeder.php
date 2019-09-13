@@ -1,5 +1,6 @@
 <?php
 
+use App\Teacher_selfassessment;
 use Illuminate\Database\Seeder;
 
 class TeacherSelfAssessmentTableSeeder extends Seeder

@@ -29,6 +29,6 @@ class CreateTeacherSelfAssessmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('teacher__self__assessments');
+        Schema::dropIfExists('teacher_self_assessments');
     }
 }

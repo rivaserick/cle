@@ -17,9 +17,9 @@ class CreateObservacionItemsTable extends Migration
         Schema::create('observacion_items', function (Blueprint $table) {
             $table->bigIncrements('id');            
             $table->integer('id_observacion')->unsigned();
-            $table->foreign('id_observacion')->references('id')->on('observacions');
+            $table->foreign('id_observacion')->references('id')->on('observacions')->onDelete('cascade');
             $table->integer('id_item')->unsigned();
-            $table->foreign('id_item')->references('id')->on('items');
+            $table->foreign('id_item')->references('id')->on('items')->onDelete('cascade');
             $table->integer('score_item')->unsigned();
             $table->timestamps();
         });

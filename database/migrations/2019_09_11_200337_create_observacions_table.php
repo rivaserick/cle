@@ -17,16 +17,16 @@ class CreateObservacionsTable extends Migration
         Schema::create('observacions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('id_grupo');
-            $table->foreign('id_grupo')->references('id')->on('grupos');
+            $table->foreign('id_grupo')->references('id')->on('grupos')->onDelete('cascade');
             $table->integer('id_observador')->unsigned();
-            $table->foreign('id_observador')->references('id')->on('observadors');
+            $table->foreign('id_observador')->references('id')->on('observadors')->onDelete('cascade');
             $table->date('fecha');
             $table->string('strengths_observed');
             $table->string('suggestions_improvement');
             $table->string('general_observations');
             $table->string('observees_comment')->nullable();
             $table->integer('id_teacher_self_assessment')->unsigned()->nullable();
-            $table->foreign('id_teacher_self_assessment')->references('id')->on('teacher_self_assessments');
+            $table->foreign('id_teacher_self_assessment')->references('id')->on('teacher_self_assessments')->onDelete('cascade');
             $table->timestamp('fecha_feedback')->nullable();;
             $table->timestamps();
         });

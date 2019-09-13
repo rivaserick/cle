@@ -1,261 +1,267 @@
-id,nombre,nivel,created_at,updated_at,id_user,username,password,original_password
-138,Catalina Garcia Vazquez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,138,catalinagarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-146,Abril Dulce Serrato Vidal,1,2019-08-19 15:44:19,2019-09-06 13:51:59,146,abrilserrato,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-149,Wendy Paloma Flores Jimenez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,149,wendyflores,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-150,Miguel Angel Ramirez Mondragon,1,2019-08-19 15:44:19,2019-09-06 13:51:59,150,miguelramirez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-152,Itzel Perez Ayala,1,2019-08-19 15:44:19,2019-09-06 13:51:59,152,itzelperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-155,Alejandra Ivette Medina Hernandez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,155,alejandramedina,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-167,Carmen De Jesus Serrano Villasenor,1,2019-08-19 15:44:19,2019-09-06 13:51:59,167,carmenserrano,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-168,Noe Cambrón Cortés,1,2019-08-19 15:44:19,2019-09-06 13:51:59,168,noecambron,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-172,Daniela Cadenas Leon,1,2019-08-19 15:44:19,2019-09-06 13:51:59,172,danielacadenas,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-173,Monica Bastida Cortes,1,2019-08-19 15:44:19,2019-09-06 13:51:59,173,monicabastida,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-176,Marcos Montiel Leon,1,2019-08-19 15:44:19,2019-09-06 13:51:59,176,marcosmontiel,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-177,Rosa Isabel Espinosa Sanchez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,177,rosaespinosa,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-178,Bertha Rosina Duran Coronado,1,2019-08-19 15:44:19,2019-09-06 13:51:59,178,bduran,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-185,Yamile Herrera Arana,1,2019-08-19 15:44:19,2019-09-06 13:51:59,185,yamilearana,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-188,Ruben Caballero Villaseñor,1,2019-08-19 15:44:19,2019-09-06 13:51:59,188,rubencaballero,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-190,Claudia Gonzalez Gomez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,190,cgonzalezg,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-192,Carolina Aguilar Hernández,1,2019-08-19 15:44:19,2019-09-06 13:51:59,192,chernandez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-193,Elier Alcaraz Ramirez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,193,ealcaraz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-196,Juan Pablo Pérez García,1,2019-08-19 15:44:19,2019-09-06 13:51:59,196,juanperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-197,Jose Luis Sosa Jaramillo,1,2019-08-19 15:44:19,2019-09-06 13:51:59,197,sjaramillo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-198,Itziri Yarely Salinas Miranda,1,2019-08-19 15:44:19,2019-09-06 13:51:59,198,isalinas,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-199,Gry Kristell Garcia Lozano,1,2019-08-19 15:44:19,2019-09-06 13:51:59,199,Kriss Galo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-200,Cynthia Hayde Gonzalez Molina ,1,2019-08-19 15:44:19,2019-09-06 13:51:59,200,cynthiagonzalez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-202,Ricardo Bedolla Perez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,202,rbedolla,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-210,Karina Pedroza Vargas ,1,2019-08-19 15:44:19,2019-09-06 13:51:59,210,kpedroza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-218,Zyanya Tapia Osornio,1,2019-08-19 15:44:19,2019-09-06 13:51:59,218,zyanyatapia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-219,Felicia Serrano Villaseñor,1,2019-08-19 15:44:19,2019-09-06 13:51:59,219,feliciaserrano,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-221,Socorro Morelia Garcia Gonzalez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,221,mgarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-230,Nadia Patricia Garcia Chacon,1,2019-08-19 15:44:20,2019-09-06 13:51:59,230,nadiagarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-231,Teresa Quezada Maciel,1,2019-08-19 15:44:20,2019-09-06 13:51:59,231,teresaquezada,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-236,Miriam Saucedo Leal,1,2019-08-19 15:44:20,2019-09-06 13:51:59,236,mimysaucedo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-241,Donald Patricio Cruz,1,2019-08-19 15:44:20,2019-09-06 13:51:59,241,donaldpatricio,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-242,Wendy Yunuen Arévalo Espinal,1,2019-08-19 15:44:20,2019-09-06 13:51:59,242,wendyarevalo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-251,Viridiana Orozco Muñoz,1,2019-08-19 15:44:20,2019-09-06 13:51:59,251,viridianaorozco,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-94,Elizabeth Romero Ayala,1,2019-08-19 15:44:19,2019-08-19 15:44:19,94,,'',''
-78,Italia Patiño Correa,1,2019-08-19 15:44:19,2019-08-19 15:44:19,78,,'',''
-85,Jose Antonio Rubio Guzman,1,2019-08-19 15:44:19,2019-09-06 13:51:59,85,joserubio,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-93,Hiram Mejia Gonzalez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,93,hirammejia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-95,Gustavo Alejandro Arreola Contreras,1,2019-08-19 15:44:19,2019-09-06 13:51:59,95,gustavoarreola,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-100,Alejandra Lopez Pena,1,2019-08-19 15:44:19,2019-09-06 13:51:59,100,alejandralopez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-101,Ernesto Ponce De Leon Rodriguez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,101,ernestoponce,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-102,Eduardo Silva Zalapa,1,2019-08-19 15:44:19,2019-09-06 13:51:59,102,eduardosilva,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-112,Patricia Igumaely Tinoco Calderon,1,2019-08-19 15:44:19,2019-09-06 13:51:59,112,patriciatinoco,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-114,Isela Mendoza Escobedo,1,2019-08-19 15:44:19,2019-09-06 13:51:59,114,iselamendoza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-121,Carlos Perez Romero,1,2019-08-19 15:44:19,2019-09-06 13:51:59,121,carlosperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-123,Vianey Alicia Figueroa Arteaga,1,2019-08-19 15:44:19,2019-09-06 13:51:59,123,vianeyfigueroa,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-133,Jose Manuel Cuin Jacuinde,1,2019-08-19 15:44:19,2019-09-06 13:51:59,133,josecuin,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-96,Gregorio Carranza Pena,1,2019-08-19 15:44:19,2019-08-19 15:44:19,96,,'',''
-80,Miguel Gutierrez Villagomez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,80,,'',''
-82,Yolanda Leticia Gutierrez De La Fuente,1,2019-08-19 15:44:19,2019-08-19 15:44:19,82,,'',''
-83,Elena Perez Campos,1,2019-08-19 15:44:19,2019-08-19 15:44:19,83,,'',''
-84,David Diaz Morales,1,2019-08-19 15:44:19,2019-08-19 15:44:19,84,,'',''
-98,Deyanira Echeverria Arteaga,1,2019-08-19 15:44:19,2019-08-19 15:44:19,98,,'',''
-108,Magdalena Malgorzata Watrobka,1,2019-08-19 15:44:19,2019-08-19 15:44:19,108,,'',''
-110,Victor Piñon Flores,1,2019-08-19 15:44:19,2019-08-19 15:44:19,110,,'',''
-111,Mayra Coria Ramirez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,111,,'',''
-120,Madai Tinoco Labastida,1,2019-08-19 15:44:19,2019-08-19 15:44:19,120,,'',''
-130,Andrei Izquierdo Chavez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,130,,'',''
-134,Karina Mariella Galvan Avila,1,2019-08-19 15:44:19,2019-08-19 15:44:19,134,,'',''
-136,Yunuen Lorenzo Gonzalez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,136,,'',''
-137,Ramon Barajas Gutierrez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,137,,'',''
-140,Xareni Camacho Carrasco,1,2019-08-19 15:44:19,2019-08-19 15:44:19,140,,'',''
-142,Cecilia Georgina Torres Mona,1,2019-08-19 15:44:19,2019-08-19 15:44:19,142,,'',''
-144,Sonia Valladolid Ruiz,1,2019-08-19 15:44:19,2019-08-19 15:44:19,144,,'',''
-147,Jessica Gomez Saavedra,1,2019-08-19 15:44:19,2019-08-19 15:44:19,147,,'',''
-153,Dulce Yuritzi Galvan Avila,1,2019-08-19 15:44:19,2019-08-19 15:44:19,153,,'',''
-157,Norma Alejandra Suarez Navarro,1,2019-08-19 15:44:19,2019-08-19 15:44:19,157,,'',''
-158,Rosa Isela Corona Gonzalez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,158,,'',''
-159,Irma Oregon Trejo,1,2019-08-19 15:44:19,2019-08-19 15:44:19,159,,'',''
-161,Miriam Liliana Quintero Cuevas,1,2019-08-19 15:44:19,2019-08-19 15:44:19,161,,'',''
-163,Mariana Estefany Guillen Tapia,1,2019-08-19 15:44:19,2019-08-19 15:44:19,163,,'',''
-164,Sandra Almanza Garcia,1,2019-08-19 15:44:19,2019-08-19 15:44:19,164,,'',''
-165,Edaenna Aída Mejia Perez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,165,,'',''
-166,Evelyn Rosario Navarro Junez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,166,,'',''
-169,Alexia Natalia Martinez Alvarado,1,2019-08-19 15:44:19,2019-08-19 15:44:19,169,,'',''
-326,Ivan Garcia Chacon,1,2019-08-19 15:44:20,2019-08-19 15:44:20,326,,'',''
-252,Maria Del Refugio Zuñiga Villarreal,1,2019-08-19 15:44:20,2019-09-06 13:51:59,252,mariazuniga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-257,Laura Montiel Palacios,1,2019-08-19 15:44:20,2019-09-06 13:51:59,257,lauramontiel,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-259,Eden Sarai Barrales Martinez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,259,edenbarrales,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-261,Elias Zaragoza Chavez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,261,eliaszaragoza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-265,Oscar Daniel Rodríguez Gutiérrez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,265,oscarrodriguez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-268,Valeria Camacho Molina,1,2019-08-19 15:44:20,2019-09-06 13:51:59,268,valeriacamacho,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-269,Alma Dunya Ayala Giron,1,2019-08-19 15:44:20,2019-09-06 13:51:59,269,almaayala,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-271,Sonia Rodríguez Cortés,1,2019-08-19 15:44:20,2019-09-06 13:51:59,271,soniarodriguez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-272,Haide Geraldin Suarez Perez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,272,haidesuarez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-170,Juan Contreras Jassi,1,2019-08-19 15:44:19,2019-08-19 15:44:19,170,,'',''
-171,Sara Del Carmen Hernandez Melgar,1,2019-08-19 15:44:19,2019-08-19 15:44:19,171,,'',''
-174,Adan Alberto Hurtado Olivares,1,2019-08-19 15:44:19,2019-08-19 15:44:19,174,,'',''
-175,Israel Delgado Vega,1,2019-08-19 15:44:19,2019-08-19 15:44:19,175,,'',''
-179,Sujey Nuñez Ventura,1,2019-08-19 15:44:19,2019-08-19 15:44:19,179,,'',''
-180,Marco Antonio Oseguera Chávez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,180,,'',''
-181,Erving Gonzalez Magaña,1,2019-08-19 15:44:19,2019-08-19 15:44:19,181,,'',''
-182,Marcela Ruiz Garcia,1,2019-08-19 15:44:19,2019-08-19 15:44:19,182,,'',''
-183,Omar Ceja Salgado,1,2019-08-19 15:44:19,2019-08-19 15:44:19,183,,'',''
-184,Karla Karina Gonzalez Legorreta,1,2019-08-19 15:44:19,2019-08-19 15:44:19,184,,'',''
-186,Estefania Rojas Samano,1,2019-08-19 15:44:19,2019-08-19 15:44:19,186,,'',''
-187,Bruno Hiram Gomez Rebollo,1,2019-08-19 15:44:19,2019-08-19 15:44:19,187,,'',''
-189,Carolina Gonzalez Gomez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,189,,'',''
-191,Ma Guadalupe Chávez Valencia,1,2019-08-19 15:44:19,2019-08-19 15:44:19,191,,'',''
-194,Gerardo Tinoco Guerrero,1,2019-08-19 15:44:19,2019-08-19 15:44:19,194,,'',''
-195,Alkider Escobar Delgado,1,2019-08-19 15:44:19,2019-08-19 15:44:19,195,,'',''
-201,Franco Axel Cambron Rosas,1,2019-08-19 15:44:19,2019-08-19 15:44:19,201,,'',''
-203,Monica Alvarez Contreras,1,2019-08-19 15:44:19,2019-08-19 15:44:19,203,,'',''
-204,Carlos Arreola Fernandez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,204,,'',''
-205,Felipe Gonzalez Martinez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,205,,'',''
-206,Adriana Pérez Nava,1,2019-08-19 15:44:19,2019-08-19 15:44:19,206,,'',''
-207,Alejandra Romero Espinoza,1,2019-08-19 15:44:19,2019-08-19 15:44:19,207,,'',''
-208,Laura Cristina Estrada Morelos,1,2019-08-19 15:44:19,2019-08-19 15:44:19,208,,'',''
-209,Alejandra Jaimes Ruíz,1,2019-08-19 15:44:19,2019-08-19 15:44:19,209,,'',''
-211,Jocelyn Ortiz Hernandez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,211,,'',''
-212,Daniel Michel Andre Gavard,1,2019-08-19 15:44:19,2019-08-19 15:44:19,212,,'',''
-213,Cynthia Pahua Martinez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,213,,'',''
-215,Alfredo Leyva,1,2019-08-19 15:44:19,2019-08-19 15:44:19,215,,'',''
-216,Jorge Salazar Vega,1,2019-08-19 15:44:19,2019-08-19 15:44:19,216,,'',''
-217,José Roberto López Avila,1,2019-08-19 15:44:19,2019-08-19 15:44:19,217,,'',''
-220,Ariadna Diaz Vallejo,1,2019-08-19 15:44:19,2019-08-19 15:44:19,220,,'',''
-222,Diana Laura Espinosa Sánchez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,222,,'',''
-223,Basemet Saray Hernandez Rodriguez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,223,,'',''
-224,Hector Cadena,1,2019-08-19 15:44:20,2019-08-19 15:44:20,224,,'',''
-225,Peter Staude,1,2019-08-19 15:44:20,2019-08-19 15:44:20,225,,'',''
-226,Karla Janet Tentory Camacho,1,2019-08-19 15:44:20,2019-08-19 15:44:20,226,,'',''
-227,Ari Vazquez Uribe,1,2019-08-19 15:44:20,2019-08-19 15:44:20,227,,'',''
-228,Margarita Wendolyne Elizarraraz Correa,1,2019-08-19 15:44:20,2019-08-19 15:44:20,228,,'',''
-229,Salam Danae Mascote Piñon,1,2019-08-19 15:44:20,2019-08-19 15:44:20,229,,'',''
-274,Monica Espinoza Cano,1,2019-08-19 15:44:20,2019-09-06 13:51:59,274,monicaespinoza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-275,Alina Michelle Rios Olivos,1,2019-08-19 15:44:20,2019-09-06 13:51:59,275,alinarios,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-277,Jenny Arlette Garnica Bautista,1,2019-08-19 15:44:20,2019-09-06 13:51:59,277,jennygarnica,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-279,Juan Bolaños Sampablo,1,2019-08-19 15:44:20,2019-09-06 13:51:59,279,juanbolanos,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-280,Katia Lily Bautista Jaimes,1,2019-08-19 15:44:20,2019-09-06 13:51:59,280,katiabautista,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-281,Veronica Molina Rodriguez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,281,veronicamolina,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-282,Rocio Bedolla Cornejo,1,2019-08-19 15:44:20,2019-09-06 13:51:59,282,rociobedolla,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-287,Claudia Paulina Álvarez Ramírez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,287,claudiaalvarez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-289,Jessica Aguilar Morquecho,1,2019-08-19 15:44:20,2019-09-06 13:51:59,289,jessicaaguilar,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-291,Jacinthe Loranger,1,2019-08-19 15:44:20,2019-09-06 13:51:59,291,jacintheloranger,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-292,Patricia Jaimes Jacuinde,1,2019-08-19 15:44:20,2019-09-06 13:51:59,292,patriciajaimes,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-294,Montserrat Juarez Aguilar,1,2019-08-19 15:44:20,2019-09-06 13:51:59,294,montserratjuarez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-295,Arturo Aguilera Mandujano,1,2019-08-19 15:44:20,2019-09-06 13:51:59,295,arturoaguilera,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-88,Perla Yunuen Fuentes Rodriguez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,88,,'',''
-89,Laura Gabriela Talavera Barajas,1,2019-08-19 15:44:19,2019-08-19 15:44:19,89,,'',''
-232,Maria Luisa Moreno Ruiz,1,2019-08-19 15:44:20,2019-08-19 15:44:20,232,,'',''
-234,Esmeralda Chavez Mora,1,2019-08-19 15:44:20,2019-08-19 15:44:20,234,,'',''
-235,Maria Magdalena Montemayor Jaime,1,2019-08-19 15:44:20,2019-08-19 15:44:20,235,,'',''
-237,Fernanda Piñon Calderon,1,2019-08-19 15:44:20,2019-08-19 15:44:20,237,,'',''
-238,Erika Delgado Murillo,1,2019-08-19 15:44:20,2019-08-19 15:44:20,238,,'',''
-239,Uwe-Karsten Seidel,1,2019-08-19 15:44:20,2019-08-19 15:44:20,239,,'',''
-240,Carmen Magdaleno Jurado,1,2019-08-19 15:44:20,2019-08-19 15:44:20,240,,'',''
-243,Laura Angelica Lomeli Raya,1,2019-08-19 15:44:20,2019-08-19 15:44:20,243,,'',''
-244,Miriam Garnica Rico,1,2019-08-19 15:44:20,2019-08-19 15:44:20,244,,'',''
-245,Cesar Raul Mendoza Cabrera,1,2019-08-19 15:44:20,2019-08-19 15:44:20,245,,'',''
-246,Brenda Aviña Jimenez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,246,,'',''
-247,Laura Gabriela Bautista Martinez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,247,,'',''
-248,Erick Mauricio Tinoco Perez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,248,,'',''
-249,Cindel Alejandra Perez Torres,1,2019-08-19 15:44:20,2019-08-19 15:44:20,249,,'',''
-250,Celeste Escutia Alvarado,1,2019-08-19 15:44:20,2019-08-19 15:44:20,250,,'',''
-253,Brenda Indira Romero Mendez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,253,,'',''
-298,Eduardo Aguirre Macedo,1,2019-08-19 15:44:20,2019-09-06 13:51:59,298,eduardoaguirre,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-302,Marco Alejandro Alva Martinez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,302,Alex29AM,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-303,Veronica Garnica Chagolla,1,2019-08-19 15:44:20,2019-09-06 13:51:59,303,veronicagarnica,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-305,Maria Fernanda Villa Lopez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,305,mariavilla,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-306,Blanca Vanessa Solorzano Tena,1,2019-08-19 15:44:20,2019-09-06 13:51:59,306,blancasolorzano,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-307,Gabriela Socorro Aguirre Lazaro,1,2019-08-19 15:44:20,2019-09-06 13:51:59,307,gabrielaaguirre,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-311,Karl Fuchsbichler Carmona,1,2019-08-19 15:44:20,2019-09-06 13:51:59,311,karlcarmona,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-313,Carolina Raquel Rodriguez Guzman,1,2019-08-19 15:44:20,2019-09-06 13:51:59,313,carolinarodriguez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-316,Dulce Elizabeth Venegas Arreola,1,2019-08-19 15:44:20,2019-09-06 13:51:59,316,dulcevenegas,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-317,Erika Paulina Villicaña Rodriguez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,317,erikavillicaña,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-319,Jessie Lopez Moreno,1,2019-08-19 15:44:20,2019-09-06 13:51:59,319,jessielopez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-322,Diego Vidal Almazan Orozco,1,2019-08-19 15:44:20,2019-09-06 13:51:59,322,diegoalmazan,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-323,Maria Fernanda Ruiz Torres,1,2019-08-19 15:44:20,2019-09-06 13:51:59,323,mariaruiz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-10,Brenda Margot Hernandez Trujillo,1,2019-08-19 15:44:19,2019-09-06 13:51:59,10,brendahernandez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-12,Cecilia  Gabriela Cruz Huazano,1,2019-08-19 15:44:19,2019-09-06 13:51:59,12,ceciliacruz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-16,Maria De Jesus Zavala Gonzalez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,16,mariazavala,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-33,Abraham Montañez Arciga,1,2019-08-19 15:44:19,2019-09-06 13:51:59,33,abrahammontañez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-44,Noel Garcia Estrada,1,2019-08-19 15:44:19,2019-09-06 13:51:59,44,noelgarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-48,Jose Luis Gutierrez Cortez,1,2019-08-19 15:44:19,2019-09-06 13:51:59,48,josegutierrez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-55,Sergio Ismael Carranza Peña,1,2019-08-19 15:44:19,2019-09-06 13:51:59,55,sergiocarranza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-60,Ignacio Perez Jacobo,1,2019-08-19 15:44:19,2019-09-06 13:51:59,60,ignacioperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-14,Aurelio Amaury Coria Ramirez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,14,,'',''
-17,Perla Yunuen Morelos Hidalgo,1,2019-08-19 15:44:19,2019-08-19 15:44:19,17,,'',''
-18,Lilian Rodriguez Rodriguez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,18,,'',''
-21,Jessica Fuentes Rodriguez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,21,,'',''
-27,Veronica Ramirez Gaona,1,2019-08-19 15:44:19,2019-08-19 15:44:19,27,,'',''
-30,Osvaldo Solis Hernandez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,30,,'',''
-31,Alicia De Monserrat Lozano Berber,1,2019-08-19 15:44:19,2019-08-19 15:44:19,31,,'',''
-32,Sharon Zujeiry Hernandez Delgado,1,2019-08-19 15:44:19,2019-08-19 15:44:19,32,,'',''
-36,Maria Carol Ramirez Garcidueñas,1,2019-08-19 15:44:19,2019-08-19 15:44:19,36,,'',''
-37,Karina Ramirez Garcidueñas,1,2019-08-19 15:44:19,2019-08-19 15:44:19,37,,'',''
-38,Flavia Miroslava Cortez Vaca,1,2019-08-19 15:44:19,2019-08-19 15:44:19,38,,'',''
-40,Juan Rodolfo Jaimes Gonzalez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,40,,'',''
-41,Juan Pablo Ayala Ayala,1,2019-08-19 15:44:19,2019-08-19 15:44:19,41,,'',''
-42,Yolanda Calderon Reyes,1,2019-08-19 15:44:19,2019-08-19 15:44:19,42,,'',''
-43,Shanti Gabriela Abarca Reyes,1,2019-08-19 15:44:19,2019-08-19 15:44:19,43,,'',''
-46,Raquel Lizbeth Flores Jimenez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,46,,'',''
-47,Jose Alberto Dominguez Chavez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,47,,'',''
-49,Ivan Ortiz Rodriguez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,49,,'',''
-53,Suriel Pardo Zamora,1,2019-08-19 15:44:19,2019-08-19 15:44:19,53,,'',''
-62,Raquel Peña Martinez,1,2019-08-19 15:44:19,2019-08-19 15:44:19,62,,'',''
-63,Maria De Jesus Sachenca Silva Cisneros,1,2019-08-19 15:44:19,2019-08-19 15:44:19,63,,'',''
-64,Jaime David Macedo Reynada,1,2019-08-19 15:44:19,2019-08-19 15:44:19,64,,'',''
-66,Juan Jacinto Ocampo Garcia,1,2019-08-19 15:44:19,2019-08-19 15:44:19,66,,'',''
-67,Joel Avalos Meza,1,2019-08-19 15:44:19,2019-08-19 15:44:19,67,,'',''
-69,Alicia Rodriguez Barriga,1,2019-08-19 15:44:19,2019-08-19 15:44:19,69,,'',''
-72,Diana Zuñiga Garcia,1,2019-08-19 15:44:19,2019-08-19 15:44:19,72,,'',''
-74,Sergio Arteaga Alvarado,1,2019-08-19 15:44:19,2019-08-19 15:44:19,74,,'',''
-75,Mariana Lizbeth Galvan Avila,1,2019-08-19 15:44:19,2019-08-19 15:44:19,75,,'',''
-254,Carlos Alberto Sánchez Gutiérrez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,254,,'',''
-255,Martin Edier Castro Hernandez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,255,,'',''
-256,Maria Teresa Hernandez Trejo,1,2019-08-19 15:44:20,2019-08-19 15:44:20,256,,'',''
-260,Jose Guadalupe Reyes Rocha,1,2019-08-19 15:44:20,2019-08-19 15:44:20,260,,'',''
-262,Carlos Eduardo Aguilera Astudillo,1,2019-08-19 15:44:20,2019-08-19 15:44:20,262,,'',''
-263,Alicia Susana Robledo Verduzco,1,2019-08-19 15:44:20,2019-08-19 15:44:20,263,,'',''
-264,Hazael Ociel Ramirez Ferreira,1,2019-08-19 15:44:20,2019-08-19 15:44:20,264,,'',''
-266,Gladys Amanda Maldonado Martínez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,266,,'',''
-267,Samantha Camacho Molina,1,2019-08-19 15:44:20,2019-08-19 15:44:20,267,,'',''
-270,Inés Alicia Huazano Magaña,1,2019-08-19 15:44:20,2019-08-19 15:44:20,270,,'',''
-273,Angel Gustavo Estrada Alvarez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,273,,'',''
-276,Analilia Ceja Valencia,1,2019-08-19 15:44:20,2019-08-19 15:44:20,276,,'',''
-278,Ricardo Garcia Gomez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,278,,'',''
-283,Yunue Landa Fernandez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,283,,'',''
-284,Iraisa Requena Zamorano,1,2019-08-19 15:44:20,2019-08-19 15:44:20,284,,'',''
-285,Luis Enrique Renteria Argueta,1,2019-08-19 15:44:20,2019-08-19 15:44:20,285,,'',''
-286,Gustavo Raúl Rentería Bolaños,1,2019-08-19 15:44:20,2019-08-19 15:44:20,286,,'',''
-288,Luis Antonio Ceja Valencia,1,2019-08-19 15:44:20,2019-08-19 15:44:20,288,,'',''
-290,Laura Elena Guzmán Caballero,1,2019-08-19 15:44:20,2019-08-19 15:44:20,290,,'',''
-293,Erandi Catalina Sánchez Trigueros,1,2019-08-19 15:44:20,2019-08-19 15:44:20,293,,'',''
-297,Eva Maria Hernandez Ortega,1,2019-08-19 15:44:20,2019-08-19 15:44:20,297,,'',''
-299,Martha Lucia Romero Olivares,1,2019-08-19 15:44:20,2019-08-19 15:44:20,299,,'',''
-300,Marisol González Chávez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,300,,'',''
-301,Pholette Maciel Cruz,1,2019-08-19 15:44:20,2019-08-19 15:44:20,301,,'',''
-308,Paula Yael Cornejo Ayala,1,2019-08-19 15:44:20,2019-08-19 15:44:20,308,,'',''
-312,Ayleen Anayanci Roman Diego,1,2019-08-19 15:44:20,2019-08-19 15:44:20,312,,'',''
-314,Cynthia Isabel Santiago Barajas,1,2019-08-19 15:44:20,2019-08-19 15:44:20,314,,'',''
-315,Abel Alejandro Durán García,1,2019-08-19 15:44:20,2019-08-19 15:44:20,315,,'',''
-320,Eduardo Nuñez Gonzalez,1,2019-08-19 15:44:20,2019-08-19 15:44:20,320,,'',''
-327,Juan Gabriel Herrera Torres,1,2019-08-19 15:44:20,2019-08-19 15:44:20,327,,'',''
-333,Ivis Haydee Ortiz Ferreyra,1,2019-08-19 15:44:20,2019-08-19 15:44:20,333,,'',''
-334,María Guadalupe Guerrero Calderón,1,2019-08-19 15:44:20,2019-08-19 15:44:20,334,,'',''
-335,Arturo Barron Rangel,1,2019-08-19 15:44:20,2019-08-19 15:44:20,335,,'',''
-338,Diana Ivette Romero Saucedo,1,2019-08-19 15:44:20,2019-08-19 15:44:20,338,,'',''
-341,Rigoberto Lopez Villicaña,1,2019-08-19 15:44:20,2019-08-19 15:44:20,341,,'',''
-344,Lizbeth Araceli Romero Cerda,1,2019-08-19 15:44:20,2019-08-19 15:44:20,344,,'',''
-346,Cid Leana Morales,1,2019-08-19 15:44:20,2019-08-19 15:44:20,346,,'',''
-347,Mariana Medina,1,2019-08-19 15:44:20,2019-08-19 15:44:20,347,,'',''
-353,Oscar Narciso Bejar Bedolla,1,2019-08-19 15:44:20,2019-08-19 15:44:20,353,,'',''
-324,Ana Beatriz Diaz Arenas,1,2019-08-19 15:44:20,2019-09-06 13:51:59,324,anadiaz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-328,Eder Daniel Izquierdo Morales,1,2019-08-19 15:44:20,2019-09-06 13:51:59,328,ederizquierdo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-330,José Raúl Ambriz Murillo,1,2019-08-19 15:44:20,2019-09-06 13:51:59,330,josemurillo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-331,Marissa Maria Carapia Melgarejo,1,2019-08-19 15:44:20,2019-09-06 13:51:59,331,marissacarapia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-332,Monica Mayte Orozco Juarez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,332,monicaorozco,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-336,Ernesto Vieyra,1,2019-08-19 15:44:20,2019-09-06 13:51:59,336,ernestovieyra,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-337,Luis David Cruz Perez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,337,luiscruz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-339,Lucero Garcia Perez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,339,lucerogarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-340,Cesar Alan Holguin Sagrero,1,2019-08-19 15:44:20,2019-09-06 13:51:59,340,cesarholguin,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-342,Alejandro Magos,1,2019-08-19 15:44:20,2019-09-06 13:51:59,342,alejandromagos,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-343,Salvador Arevalo Ramirez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,343,salvadorarevalo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-345,Arcelia Betzabé Barriga González,1,2019-08-19 15:44:20,2019-09-06 13:51:59,345,arceliabarriga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-348,Adrian Maciel Carreño,1,2019-08-19 15:44:20,2019-09-06 13:51:59,348,adrianmaciel,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-349,Karen Arciga,1,2019-08-19 15:44:20,2019-09-06 13:51:59,349,karen arciga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-350,Hector Arciga,1,2019-08-19 15:44:20,2019-09-06 13:51:59,350,hectorarciga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-351,Francia Montserrat Castañeda Alvarez,1,2019-08-19 15:44:20,2019-09-06 13:51:59,351,franciacastaneda,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
-352,María Ángeles Ortíz Cardona,1,2019-08-19 15:44:20,2019-09-06 13:51:59,352,mariaortiz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+id,nombre,created_at,updated_at,username,password,original_password
+33,Abraham Montañez Arciga,19/08/2019 15:44,06/09/2019 13:51,abrahammontañez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+146,Abril Dulce Serrato Vidal,19/08/2019 15:44,06/09/2019 13:51,abrilserrato,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+348,Adrian Maciel Carreño,19/08/2019 15:44,06/09/2019 13:51,adrianmaciel,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+100,Alejandra Lopez Pena,19/08/2019 15:44,06/09/2019 13:51,alejandralopez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+155,Alejandra Ivette Medina Hernandez,19/08/2019 15:44,06/09/2019 13:51,alejandramedina,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+342,Alejandro Magos,19/08/2019 15:44,06/09/2019 13:51,alejandromagos,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+302,Marco Alejandro Alva Martinez,19/08/2019 15:44,06/09/2019 13:51,Alex29AM,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+275,Alina Michelle Rios Olivos,19/08/2019 15:44,06/09/2019 13:51,alinarios,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+269,Alma Dunya Ayala Giron,19/08/2019 15:44,06/09/2019 13:51,almaayala,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+324,Ana Beatriz Diaz Arenas,19/08/2019 15:44,06/09/2019 13:51,anadiaz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+345,Arcelia Betzabé Barriga González,19/08/2019 15:44,06/09/2019 13:51,arceliabarriga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+295,Arturo Aguilera Mandujano,19/08/2019 15:44,06/09/2019 13:51,arturoaguilera,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+178,Bertha Rosina Duran Coronado,19/08/2019 15:44,06/09/2019 13:51,bduran,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+306,Blanca Vanessa Solorzano Tena,19/08/2019 15:44,06/09/2019 13:51,blancasolorzano,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+10,Brenda Margot Hernandez Trujillo,19/08/2019 15:44,06/09/2019 13:51,brendahernandez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+121,Carlos Perez Romero,19/08/2019 15:44,06/09/2019 13:51,carlosperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+167,Carmen De Jesus Serrano Villasenor,19/08/2019 15:44,06/09/2019 13:51,carmenserrano,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+313,Carolina Raquel Rodriguez Guzman,19/08/2019 15:44,06/09/2019 13:51,carolinarodriguez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+138,Catalina Garcia Vazquez,19/08/2019 15:44,06/09/2019 13:51,catalinagarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+12,Cecilia  Gabriela Cruz Huazano,19/08/2019 15:44,06/09/2019 13:51,ceciliacruz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+340,Cesar Alan Holguin Sagrero,19/08/2019 15:44,06/09/2019 13:51,cesarholguin,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+190,Claudia Gonzalez Gomez,19/08/2019 15:44,06/09/2019 13:51,cgonzalezg,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+192,Carolina Aguilar Hernández,19/08/2019 15:44,06/09/2019 13:51,chernandez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+287,Claudia Paulina Álvarez Ramírez,19/08/2019 15:44,06/09/2019 13:51,claudiaalvarez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+200,Cynthia Hayde Gonzalez Molina ,19/08/2019 15:44,06/09/2019 13:51,cynthiagonzalez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+172,Daniela Cadenas Leon,19/08/2019 15:44,06/09/2019 13:51,danielacadenas,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+322,Diego Vidal Almazan Orozco,19/08/2019 15:44,06/09/2019 13:51,diegoalmazan,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+241,Donald Patricio Cruz,19/08/2019 15:44,06/09/2019 13:51,donaldpatricio,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+316,Dulce Elizabeth Venegas Arreola,19/08/2019 15:44,06/09/2019 13:51,dulcevenegas,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+193,Elier Alcaraz Ramirez,19/08/2019 15:44,06/09/2019 13:51,ealcaraz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+259,Eden Sarai Barrales Martinez,19/08/2019 15:44,06/09/2019 13:51,edenbarrales,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+328,Eder Daniel Izquierdo Morales,19/08/2019 15:44,06/09/2019 13:51,ederizquierdo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+298,Eduardo Aguirre Macedo,19/08/2019 15:44,06/09/2019 13:51,eduardoaguirre,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+102,Eduardo Silva Zalapa,19/08/2019 15:44,06/09/2019 13:51,eduardosilva,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+261,Elias Zaragoza Chavez,19/08/2019 15:44,06/09/2019 13:51,eliaszaragoza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+317,Erika Paulina Villicaña Rodriguez,19/08/2019 15:44,06/09/2019 13:51,erikavillicaña,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+101,Ernesto Ponce De Leon Rodriguez,19/08/2019 15:44,06/09/2019 13:51,ernestoponce,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+336,Ernesto Vieyra,19/08/2019 15:44,06/09/2019 13:51,ernestovieyra,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+219,Felicia Serrano Villaseñor,19/08/2019 15:44,06/09/2019 13:51,feliciaserrano,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+351,Francia Montserrat Castañeda Alvarez,19/08/2019 15:44,06/09/2019 13:51,franciacastaneda,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+307,Gabriela Socorro Aguirre Lazaro,19/08/2019 15:44,06/09/2019 13:51,gabrielaaguirre,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+95,Gustavo Alejandro Arreola Contreras,19/08/2019 15:44,06/09/2019 13:51,gustavoarreola,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+272,Haide Geraldin Suarez Perez,19/08/2019 15:44,06/09/2019 13:51,haidesuarez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+350,Hector Arciga,19/08/2019 15:44,06/09/2019 13:51,hectorarciga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+93,Hiram Mejia Gonzalez,19/08/2019 15:44,06/09/2019 13:51,hirammejia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+60,Ignacio Perez Jacobo,19/08/2019 15:44,06/09/2019 13:51,ignacioperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+198,Itziri Yarely Salinas Miranda,19/08/2019 15:44,06/09/2019 13:51,isalinas,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+114,Isela Mendoza Escobedo,19/08/2019 15:44,06/09/2019 13:51,iselamendoza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+152,Itzel Perez Ayala,19/08/2019 15:44,06/09/2019 13:51,itzelperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+291,Jacinthe Loranger,19/08/2019 15:44,06/09/2019 13:51,jacintheloranger,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+277,Jenny Arlette Garnica Bautista,19/08/2019 15:44,06/09/2019 13:51,jennygarnica,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+289,Jessica Aguilar Morquecho,19/08/2019 15:44,06/09/2019 13:51,jessicaaguilar,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+319,Jessie Lopez Moreno,19/08/2019 15:44,06/09/2019 13:51,jessielopez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+133,Jose Manuel Cuin Jacuinde,19/08/2019 15:44,06/09/2019 13:51,josecuin,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+48,Jose Luis Gutierrez Cortez,19/08/2019 15:44,06/09/2019 13:51,josegutierrez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+330,José Raúl Ambriz Murillo,19/08/2019 15:44,06/09/2019 13:51,josemurillo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+85,Jose Antonio Rubio Guzman,19/08/2019 15:44,06/09/2019 13:51,joserubio,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+279,Juan Bolaños Sampablo,19/08/2019 15:44,06/09/2019 13:51,juanbolanos,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+196,Juan Pablo Pérez García,19/08/2019 15:44,06/09/2019 13:51,juanperez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+349,Karen Arciga,19/08/2019 15:44,06/09/2019 13:51,karen arciga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+311,Karl Fuchsbichler Carmona,19/08/2019 15:44,06/09/2019 13:51,karlcarmona,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+280,Katia Lily Bautista Jaimes,19/08/2019 15:44,06/09/2019 13:51,katiabautista,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+210,Karina Pedroza Vargas ,19/08/2019 15:44,06/09/2019 13:51,kpedroza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+199,Gry Kristell Garcia Lozano,19/08/2019 15:44,06/09/2019 13:51,Kriss Galo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+257,Laura Montiel Palacios,19/08/2019 15:44,06/09/2019 13:51,lauramontiel,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+339,Lucero Garcia Perez,19/08/2019 15:44,06/09/2019 13:51,lucerogarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+337,Luis David Cruz Perez,19/08/2019 15:44,06/09/2019 13:51,luiscruz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+176,Marcos Montiel Leon,19/08/2019 15:44,06/09/2019 13:51,marcosmontiel,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+352,María Ángeles Ortíz Cardona,19/08/2019 15:44,06/09/2019 13:51,mariaortiz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+323,Maria Fernanda Ruiz Torres,19/08/2019 15:44,06/09/2019 13:51,mariaruiz,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+305,Maria Fernanda Villa Lopez,19/08/2019 15:44,06/09/2019 13:51,mariavilla,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+16,Maria De Jesus Zavala Gonzalez,19/08/2019 15:44,06/09/2019 13:51,mariazavala,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+252,Maria Del Refugio Zuñiga Villarreal,19/08/2019 15:44,06/09/2019 13:51,mariazuniga,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+331,Marissa Maria Carapia Melgarejo,19/08/2019 15:44,06/09/2019 13:51,marissacarapia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+221,Socorro Morelia Garcia Gonzalez,19/08/2019 15:44,06/09/2019 13:51,mgarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+150,Miguel Angel Ramirez Mondragon,19/08/2019 15:44,06/09/2019 13:51,miguelramirez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+236,Miriam Saucedo Leal,19/08/2019 15:44,06/09/2019 13:51,mimysaucedo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+173,Monica Bastida Cortes,19/08/2019 15:44,06/09/2019 13:51,monicabastida,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+274,Monica Espinoza Cano,19/08/2019 15:44,06/09/2019 13:51,monicaespinoza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+332,Monica Mayte Orozco Juarez,19/08/2019 15:44,06/09/2019 13:51,monicaorozco,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+294,Montserrat Juarez Aguilar,19/08/2019 15:44,06/09/2019 13:51,montserratjuarez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+230,Nadia Patricia Garcia Chacon,19/08/2019 15:44,06/09/2019 13:51,nadiagarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+168,Noe Cambrón Cortés,19/08/2019 15:44,06/09/2019 13:51,noecambron,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+44,Noel Garcia Estrada,19/08/2019 15:44,06/09/2019 13:51,noelgarcia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+265,Oscar Daniel Rodríguez Gutiérrez,19/08/2019 15:44,06/09/2019 13:51,oscarrodriguez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+292,Patricia Jaimes Jacuinde,19/08/2019 15:44,06/09/2019 13:51,patriciajaimes,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+112,Patricia Igumaely Tinoco Calderon,19/08/2019 15:44,06/09/2019 13:51,patriciatinoco,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+202,Ricardo Bedolla Perez,19/08/2019 15:44,06/09/2019 13:51,rbedolla,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+282,Rocio Bedolla Cornejo,19/08/2019 15:44,06/09/2019 13:51,rociobedolla,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+177,Rosa Isabel Espinosa Sanchez,19/08/2019 15:44,06/09/2019 13:51,rosaespinosa,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+188,Ruben Caballero Villaseñor,19/08/2019 15:44,06/09/2019 13:51,rubencaballero,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+343,Salvador Arevalo Ramirez,19/08/2019 15:44,06/09/2019 13:51,salvadorarevalo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+55,Sergio Ismael Carranza Peña,19/08/2019 15:44,06/09/2019 13:51,sergiocarranza,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+197,Jose Luis Sosa Jaramillo,19/08/2019 15:44,06/09/2019 13:51,sjaramillo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+271,Sonia Rodríguez Cortés,19/08/2019 15:44,06/09/2019 13:51,soniarodriguez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+231,Teresa Quezada Maciel,19/08/2019 15:44,06/09/2019 13:51,teresaquezada,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+268,Valeria Camacho Molina,19/08/2019 15:44,06/09/2019 13:51,valeriacamacho,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+303,Veronica Garnica Chagolla,19/08/2019 15:44,06/09/2019 13:51,veronicagarnica,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+281,Veronica Molina Rodriguez,19/08/2019 15:44,06/09/2019 13:51,veronicamolina,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+123,Vianey Alicia Figueroa Arteaga,19/08/2019 15:44,06/09/2019 13:51,vianeyfigueroa,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+251,Viridiana Orozco Muñoz,19/08/2019 15:44,06/09/2019 13:51,viridianaorozco,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+242,Wendy Yunuen Arévalo Espinal,19/08/2019 15:44,06/09/2019 13:51,wendyarevalo,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+149,Wendy Paloma Flores Jimenez,19/08/2019 15:44,06/09/2019 13:51,wendyflores,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+185,Yamile Herrera Arana,19/08/2019 15:44,06/09/2019 13:51,yamilearana,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+218,Zyanya Tapia Osornio,19/08/2019 15:44,06/09/2019 13:51,zyanyatapia,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+94,Elizabeth Romero Ayala,19/08/2019 15:44,19/08/2019 15:44,94,,
+78,Italia Patiño Correa,19/08/2019 15:44,19/08/2019 15:44,78,,
+96,Gregorio Carranza Pena,19/08/2019 15:44,19/08/2019 15:44,96,,
+80,Miguel Gutierrez Villagomez,19/08/2019 15:44,19/08/2019 15:44,80,,
+82,Yolanda Leticia Gutierrez De La Fuente,19/08/2019 15:44,19/08/2019 15:44,82,,
+83,Elena Perez Campos,19/08/2019 15:44,19/08/2019 15:44,83,,
+84,David Diaz Morales,19/08/2019 15:44,19/08/2019 15:44,84,,
+98,Deyanira Echeverria Arteaga,19/08/2019 15:44,19/08/2019 15:44,98,,
+108,Magdalena Malgorzata Watrobka,19/08/2019 15:44,19/08/2019 15:44,108,,
+110,Victor Piñon Flores,19/08/2019 15:44,19/08/2019 15:44,110,,
+111,Mayra Coria Ramirez,19/08/2019 15:44,19/08/2019 15:44,111,,
+120,Madai Tinoco Labastida,19/08/2019 15:44,19/08/2019 15:44,120,,
+130,Andrei Izquierdo Chavez,19/08/2019 15:44,19/08/2019 15:44,130,,
+134,Karina Mariella Galvan Avila,19/08/2019 15:44,19/08/2019 15:44,134,,
+136,Yunuen Lorenzo Gonzalez,19/08/2019 15:44,19/08/2019 15:44,136,,
+137,Ramon Barajas Gutierrez,19/08/2019 15:44,19/08/2019 15:44,137,,
+140,Xareni Camacho Carrasco,19/08/2019 15:44,19/08/2019 15:44,140,,
+142,Cecilia Georgina Torres Mona,19/08/2019 15:44,19/08/2019 15:44,142,,
+144,Sonia Valladolid Ruiz,19/08/2019 15:44,19/08/2019 15:44,144,,
+147,Jessica Gomez Saavedra,19/08/2019 15:44,19/08/2019 15:44,147,,
+153,Dulce Yuritzi Galvan Avila,19/08/2019 15:44,19/08/2019 15:44,153,,
+157,Norma Alejandra Suarez Navarro,19/08/2019 15:44,19/08/2019 15:44,157,,
+158,Rosa Isela Corona Gonzalez,19/08/2019 15:44,19/08/2019 15:44,158,,
+159,Irma Oregon Trejo,19/08/2019 15:44,19/08/2019 15:44,159,,
+161,Miriam Liliana Quintero Cuevas,19/08/2019 15:44,19/08/2019 15:44,161,,
+163,Mariana Estefany Guillen Tapia,19/08/2019 15:44,19/08/2019 15:44,163,,
+164,Sandra Almanza Garcia,19/08/2019 15:44,19/08/2019 15:44,164,,
+165,Edaenna Aída Mejia Perez,19/08/2019 15:44,19/08/2019 15:44,165,,
+166,Evelyn Rosario Navarro Junez,19/08/2019 15:44,19/08/2019 15:44,166,,
+169,Alexia Natalia Martinez Alvarado,19/08/2019 15:44,19/08/2019 15:44,169,,
+326,Ivan Garcia Chacon,19/08/2019 15:44,19/08/2019 15:44,326,,
+170,Juan Contreras Jassi,19/08/2019 15:44,19/08/2019 15:44,170,,
+171,Sara Del Carmen Hernandez Melgar,19/08/2019 15:44,19/08/2019 15:44,171,,
+174,Adan Alberto Hurtado Olivares,19/08/2019 15:44,19/08/2019 15:44,174,,
+175,Israel Delgado Vega,19/08/2019 15:44,19/08/2019 15:44,175,,
+179,Sujey Nuñez Ventura,19/08/2019 15:44,19/08/2019 15:44,179,,
+180,Marco Antonio Oseguera Chávez,19/08/2019 15:44,19/08/2019 15:44,180,,
+181,Erving Gonzalez Magaña,19/08/2019 15:44,19/08/2019 15:44,181,,
+182,Marcela Ruiz Garcia,19/08/2019 15:44,19/08/2019 15:44,182,,
+183,Omar Ceja Salgado,19/08/2019 15:44,19/08/2019 15:44,183,,
+184,Karla Karina Gonzalez Legorreta,19/08/2019 15:44,19/08/2019 15:44,184,,
+186,Estefania Rojas Samano,19/08/2019 15:44,19/08/2019 15:44,186,,
+187,Bruno Hiram Gomez Rebollo,19/08/2019 15:44,19/08/2019 15:44,187,,
+189,Carolina Gonzalez Gomez,19/08/2019 15:44,19/08/2019 15:44,189,,
+191,Ma Guadalupe Chávez Valencia,19/08/2019 15:44,19/08/2019 15:44,191,,
+194,Gerardo Tinoco Guerrero,19/08/2019 15:44,19/08/2019 15:44,194,,
+195,Alkider Escobar Delgado,19/08/2019 15:44,19/08/2019 15:44,195,,
+201,Franco Axel Cambron Rosas,19/08/2019 15:44,19/08/2019 15:44,201,,
+203,Monica Alvarez Contreras,19/08/2019 15:44,19/08/2019 15:44,203,,
+204,Carlos Arreola Fernandez,19/08/2019 15:44,19/08/2019 15:44,204,,
+205,Felipe Gonzalez Martinez,19/08/2019 15:44,19/08/2019 15:44,205,,
+206,Adriana Pérez Nava,19/08/2019 15:44,19/08/2019 15:44,206,,
+207,Alejandra Romero Espinoza,19/08/2019 15:44,19/08/2019 15:44,207,,
+208,Laura Cristina Estrada Morelos,19/08/2019 15:44,19/08/2019 15:44,208,,
+209,Alejandra Jaimes Ruíz,19/08/2019 15:44,19/08/2019 15:44,209,,
+211,Jocelyn Ortiz Hernandez,19/08/2019 15:44,19/08/2019 15:44,211,,
+212,Daniel Michel Andre Gavard,19/08/2019 15:44,19/08/2019 15:44,212,,
+213,Cynthia Pahua Martinez,19/08/2019 15:44,19/08/2019 15:44,213,,
+215,Alfredo Leyva,19/08/2019 15:44,19/08/2019 15:44,215,,
+216,Jorge Salazar Vega,19/08/2019 15:44,19/08/2019 15:44,216,,
+217,José Roberto López Avila,19/08/2019 15:44,19/08/2019 15:44,217,,
+220,Ariadna Diaz Vallejo,19/08/2019 15:44,19/08/2019 15:44,220,,
+222,Diana Laura Espinosa Sánchez,19/08/2019 15:44,19/08/2019 15:44,222,,
+223,Basemet Saray Hernandez Rodriguez,19/08/2019 15:44,19/08/2019 15:44,223,,
+224,Hector Cadena,19/08/2019 15:44,19/08/2019 15:44,224,,
+225,Peter Staude,19/08/2019 15:44,19/08/2019 15:44,225,,
+226,Karla Janet Tentory Camacho,19/08/2019 15:44,19/08/2019 15:44,226,,
+227,Ari Vazquez Uribe,19/08/2019 15:44,19/08/2019 15:44,227,,
+228,Margarita Wendolyne Elizarraraz Correa,19/08/2019 15:44,19/08/2019 15:44,228,,
+229,Salam Danae Mascote Piñon,19/08/2019 15:44,19/08/2019 15:44,229,,
+88,Perla Yunuen Fuentes Rodriguez,19/08/2019 15:44,19/08/2019 15:44,88,,
+89,Laura Gabriela Talavera Barajas,19/08/2019 15:44,19/08/2019 15:44,89,,
+232,Maria Luisa Moreno Ruiz,19/08/2019 15:44,19/08/2019 15:44,232,,
+234,Esmeralda Chavez Mora,19/08/2019 15:44,19/08/2019 15:44,234,,
+235,Maria Magdalena Montemayor Jaime,19/08/2019 15:44,19/08/2019 15:44,235,,
+237,Fernanda Piñon Calderon,19/08/2019 15:44,19/08/2019 15:44,237,,
+238,Erika Delgado Murillo,19/08/2019 15:44,19/08/2019 15:44,238,,
+239,Uwe-Karsten Seidel,19/08/2019 15:44,19/08/2019 15:44,239,,
+240,Carmen Magdaleno Jurado,19/08/2019 15:44,19/08/2019 15:44,240,,
+243,Laura Angelica Lomeli Raya,19/08/2019 15:44,19/08/2019 15:44,243,,
+244,Miriam Garnica Rico,19/08/2019 15:44,19/08/2019 15:44,244,,
+245,Cesar Raul Mendoza Cabrera,19/08/2019 15:44,19/08/2019 15:44,245,,
+246,Brenda Aviña Jimenez,19/08/2019 15:44,19/08/2019 15:44,246,,
+247,Laura Gabriela Bautista Martinez,19/08/2019 15:44,19/08/2019 15:44,247,,
+248,Erick Mauricio Tinoco Perez,19/08/2019 15:44,19/08/2019 15:44,248,,
+249,Cindel Alejandra Perez Torres,19/08/2019 15:44,19/08/2019 15:44,249,,
+250,Celeste Escutia Alvarado,19/08/2019 15:44,19/08/2019 15:44,250,,
+253,Brenda Indira Romero Mendez,19/08/2019 15:44,19/08/2019 15:44,253,,
+14,Aurelio Amaury Coria Ramirez,19/08/2019 15:44,19/08/2019 15:44,14,,
+17,Perla Yunuen Morelos Hidalgo,19/08/2019 15:44,19/08/2019 15:44,17,,
+18,Lilian Rodriguez Rodriguez,19/08/2019 15:44,19/08/2019 15:44,18,,
+21,Jessica Fuentes Rodriguez,19/08/2019 15:44,19/08/2019 15:44,21,,
+27,Veronica Ramirez Gaona,19/08/2019 15:44,19/08/2019 15:44,27,,
+30,Osvaldo Solis Hernandez,19/08/2019 15:44,19/08/2019 15:44,30,,
+31,Alicia De Monserrat Lozano Berber,19/08/2019 15:44,19/08/2019 15:44,31,,
+32,Sharon Zujeiry Hernandez Delgado,19/08/2019 15:44,19/08/2019 15:44,32,,
+36,Maria Carol Ramirez Garcidueñas,19/08/2019 15:44,19/08/2019 15:44,36,,
+37,Karina Ramirez Garcidueñas,19/08/2019 15:44,19/08/2019 15:44,37,,
+38,Flavia Miroslava Cortez Vaca,19/08/2019 15:44,19/08/2019 15:44,38,,
+40,Juan Rodolfo Jaimes Gonzalez,19/08/2019 15:44,19/08/2019 15:44,40,,
+41,Juan Pablo Ayala Ayala,19/08/2019 15:44,19/08/2019 15:44,41,,
+42,Yolanda Calderon Reyes,19/08/2019 15:44,19/08/2019 15:44,42,,
+43,Shanti Gabriela Abarca Reyes,19/08/2019 15:44,19/08/2019 15:44,43,,
+46,Raquel Lizbeth Flores Jimenez,19/08/2019 15:44,19/08/2019 15:44,46,,
+47,Jose Alberto Dominguez Chavez,19/08/2019 15:44,19/08/2019 15:44,47,,
+49,Ivan Ortiz Rodriguez,19/08/2019 15:44,19/08/2019 15:44,49,,
+53,Suriel Pardo Zamora,19/08/2019 15:44,19/08/2019 15:44,53,,
+62,Raquel Peña Martinez,19/08/2019 15:44,19/08/2019 15:44,62,,
+63,Maria De Jesus Sachenca Silva Cisneros,19/08/2019 15:44,19/08/2019 15:44,63,,
+64,Jaime David Macedo Reynada,19/08/2019 15:44,19/08/2019 15:44,64,,
+66,Juan Jacinto Ocampo Garcia,19/08/2019 15:44,19/08/2019 15:44,66,,
+67,Joel Avalos Meza,19/08/2019 15:44,19/08/2019 15:44,67,,
+69,Alicia Rodriguez Barriga,19/08/2019 15:44,19/08/2019 15:44,69,,
+72,Diana Zuñiga Garcia,19/08/2019 15:44,19/08/2019 15:44,72,,
+74,Sergio Arteaga Alvarado,19/08/2019 15:44,19/08/2019 15:44,74,,
+75,Mariana Lizbeth Galvan Avila,19/08/2019 15:44,19/08/2019 15:44,75,,
+254,Carlos Alberto Sánchez Gutiérrez,19/08/2019 15:44,19/08/2019 15:44,254,,
+255,Martin Edier Castro Hernandez,19/08/2019 15:44,19/08/2019 15:44,255,,
+256,Maria Teresa Hernandez Trejo,19/08/2019 15:44,19/08/2019 15:44,256,,
+260,Jose Guadalupe Reyes Rocha,19/08/2019 15:44,19/08/2019 15:44,260,,
+262,Carlos Eduardo Aguilera Astudillo,19/08/2019 15:44,19/08/2019 15:44,262,,
+263,Alicia Susana Robledo Verduzco,19/08/2019 15:44,19/08/2019 15:44,263,,
+264,Hazael Ociel Ramirez Ferreira,19/08/2019 15:44,19/08/2019 15:44,264,,
+266,Gladys Amanda Maldonado Martínez,19/08/2019 15:44,19/08/2019 15:44,266,,
+267,Samantha Camacho Molina,19/08/2019 15:44,19/08/2019 15:44,267,,
+270,Inés Alicia Huazano Magaña,19/08/2019 15:44,19/08/2019 15:44,270,,
+273,Angel Gustavo Estrada Alvarez,19/08/2019 15:44,19/08/2019 15:44,273,,
+276,Analilia Ceja Valencia,19/08/2019 15:44,19/08/2019 15:44,276,,
+278,Ricardo Garcia Gomez,19/08/2019 15:44,19/08/2019 15:44,278,,
+283,Yunue Landa Fernandez,19/08/2019 15:44,19/08/2019 15:44,283,,
+284,Iraisa Requena Zamorano,19/08/2019 15:44,19/08/2019 15:44,284,,
+285,Luis Enrique Renteria Argueta,19/08/2019 15:44,19/08/2019 15:44,285,,
+286,Gustavo Raúl Rentería Bolaños,19/08/2019 15:44,19/08/2019 15:44,286,,
+288,Luis Antonio Ceja Valencia,19/08/2019 15:44,19/08/2019 15:44,288,,
+290,Laura Elena Guzmán Caballero,19/08/2019 15:44,19/08/2019 15:44,290,,
+293,Erandi Catalina Sánchez Trigueros,19/08/2019 15:44,19/08/2019 15:44,293,,
+297,Eva Maria Hernandez Ortega,19/08/2019 15:44,19/08/2019 15:44,297,,
+299,Martha Lucia Romero Olivares,19/08/2019 15:44,19/08/2019 15:44,299,,
+300,Marisol González Chávez,19/08/2019 15:44,19/08/2019 15:44,300,,
+301,Pholette Maciel Cruz,19/08/2019 15:44,19/08/2019 15:44,301,,
+308,Paula Yael Cornejo Ayala,19/08/2019 15:44,19/08/2019 15:44,308,,
+312,Ayleen Anayanci Roman Diego,19/08/2019 15:44,19/08/2019 15:44,312,,
+314,Cynthia Isabel Santiago Barajas,19/08/2019 15:44,19/08/2019 15:44,314,,
+315,Abel Alejandro Durán García,19/08/2019 15:44,19/08/2019 15:44,315,,
+320,Eduardo Nuñez Gonzalez,19/08/2019 15:44,19/08/2019 15:44,320,,
+327,Juan Gabriel Herrera Torres,19/08/2019 15:44,19/08/2019 15:44,327,,
+333,Ivis Haydee Ortiz Ferreyra,19/08/2019 15:44,19/08/2019 15:44,333,,
+334,María Guadalupe Guerrero Calderón,19/08/2019 15:44,19/08/2019 15:44,334,,
+335,Arturo Barron Rangel,19/08/2019 15:44,19/08/2019 15:44,335,,
+338,Diana Ivette Romero Saucedo,19/08/2019 15:44,19/08/2019 15:44,338,,
+341,Rigoberto Lopez Villicaña,19/08/2019 15:44,19/08/2019 15:44,341,,
+344,Lizbeth Araceli Romero Cerda,19/08/2019 15:44,19/08/2019 15:44,344,,
+346,Cid Leana Morales,19/08/2019 15:44,19/08/2019 15:44,346,,
+347,Mariana Medina,19/08/2019 15:44,19/08/2019 15:44,347,,
+353,Oscar Narciso Bejar Bedolla,19/08/2019 15:44,19/08/2019 15:44,353,,
+354,Daniel Durán Farías,19/08/2019 15:44,19/08/2019 15:44,danielduran,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+355,Ian Castrejón,19/08/2019 15:44,19/08/2019 15:44,iancastrejon,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+356,Gladys Durán Durán,19/08/2019 15:44,19/08/2019 15:44,gladysduran,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+357,Monserrat Hernández García,19/08/2019 15:44,19/08/2019 15:44,monserrathernandez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+358,José Alberto Sánchez Martínez,19/08/2019 15:44,19/08/2019 15:44,josesanchez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS
+359,Oscar Fernando Ramírez Orozco,19/08/2019 15:44,19/08/2019 15:44,oscarramirez,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS,$2y$10$pnTyCEwOuRw0SKoToNKmB.zFJsuPlivh9A8nxRb6Ug9jqW73yQpuS

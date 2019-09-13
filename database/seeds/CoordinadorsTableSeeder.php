@@ -32,12 +32,12 @@ class CoordinadorsTableSeeder extends Seeder
                     $seed = new Coordinador; //
 
                     $seed->id = $row[0];
-                    $seed->id_user = $row[1];
-                    $seed->created_at = $row[2];
-                    $seed->updated_at = $row[3];
+                    $seed->created_at = $row[1];
+                    $seed->updated_at = $row[2];
+                    $seed->nombre = $row[3];
                     $seed->username = $row[4];
                     $seed->password = $row[5];
-                    $seed->nombre = $row[6];
+                    $seed->original_password = $row[6];
 
                     $seed->save();
                     echo var_dump($row);

@@ -15,11 +15,11 @@ class CreateGruposTable extends Migration
     {
         //Final
         Schema::create('grupos', function (Blueprint $table) {
-            $table->string('id');
+            $table->string('id')->unique();
             $table->string('id_periodo')->nullable();
             $table->string('grupo')->nullable();            
             $table->integer('id_profesor')->unsigned()->after('id');
-            $table->foreign('id_profesor')->references('id')->on('profesors');
+            $table->foreign('id_profesor')->references('id')->on('profesors')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -18,7 +18,8 @@ class CreateSublineaCapacitacionsTable extends Migration
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->integer('id_linea_capacitacion')->unsigned();
-            $table->foreign('id_linea_capacitacion')->references('id')->on('linea_capacitacions');
+            $table->foreign('id_linea_capacitacion')->references('id')
+                ->on('linea_capacitacions')->onDelete('cascade');
             $table->timestamps();
         });
     }

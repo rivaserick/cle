@@ -33,13 +33,12 @@ class ProfesorsTableSeeder extends Seeder
 
                     $seed->id = $row[0];
                     $seed->nombre = $row[1];
-                    $seed->nivel = $row[2];
-                    $seed->created_at = $row[3];
-                    $seed->updated_at = $row[4];
-                    $seed->id_user = $row[5];
-
+                    $seed->created_at = now();
+                    $seed->updated_at = now();
+                    $seed->username = $row[4];
+                    $seed->password = $row[5];
+                    $seed->original_password = $row[6];
                     $seed->save();
-                    echo var_dump($row);
                 }
             }
             fclose($handle);

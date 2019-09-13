@@ -1,5 +1,6 @@
 <?php
 
+use App\Item;
 use Illuminate\Database\Seeder;
 
 class ItemsTableSeeder extends Seeder
@@ -35,8 +36,8 @@ class ItemsTableSeeder extends Seeder
                     $obj->id = $row[0];
                     $obj->id_categoria = $row[1];
                     $obj->texto_item = $row[2];
-                    $obj->created_at = $row[3];
-                    $obj->updated_at = $row[4];
+                    $obj->created_at = now();
+                    $obj->updated_at = now();
                     $obj->save();
                 }
             }

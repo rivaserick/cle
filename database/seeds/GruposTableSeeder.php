@@ -1,5 +1,6 @@
 <?php
 
+use App\Grupo;
 use Illuminate\Database\Seeder;
 
 class GruposTableSeeder extends Seeder
@@ -35,8 +36,8 @@ class GruposTableSeeder extends Seeder
                     $obj->id = $row[0];
                     $obj->id_profesor = $row[1];
                     $obj->grupo = $row[2];
-                    $obj->created_at = $row[3];
-                    $obj->updated_at = $row[4];
+                    $obj->created_at = now();
+                    $obj->updated_at = now();
                     $obj->save();
                 }
             }
