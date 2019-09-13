@@ -70,14 +70,14 @@
                                         <div class="col-6">
                                                 <form action="{{route('coordinacion.actualizaciones.guardar', ['id' => $actualizacion->id])}}"
                                                 method="post">
-                                                @method('PUT')
+                                                @method('post')
                                                 @csrf
                                                 <button type="submit" name="id_status" value="2"
                                                     class="btn btn-success btn-block">Aprobar</button>
                                             </form>
                                         </div>
                                         <div class="col-6">
-                                            <form action="{{route('coordinacion.actualizaciones.pendientes', ['id' => $actualizacion->id])}}"
+                                            <form action="{{route('coordinacion.actualizaciones.ver', ['id' => $actualizacion->id])}}"
                                                 method="get">
                                                 <button type="submit" class="btn btn-danger btn-block">Rechazar</button>
                                             </form>

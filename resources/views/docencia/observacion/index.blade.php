@@ -6,51 +6,49 @@
     @if (Session::has('message'))
     <div class="alert alert-info">{{ Session::get('message') }}</div>
     @endif
-    <div class="card text-center">
-        <div class="card-body">
-            <p class="card-text">Ir a la página para subir observaciones del período.</p>
-            <a href="{{ route('observacion.registrar') }}" class="btn btn-primary">Subir</a>
-        </div>
-    </div>
 </div>
 <div class="container">
-    @if ($observaciones->isEmpty())
-    <h2 class="text-center text-uppercase py-2">No has registrado observaciones aún.</h2>
+    @if ($grupos->isEmpty())
+    <h2 class="text-center text-uppercase py-2">No han registrado observaciones para tus grupos aún.</h2>
     @else
-    <h2 class="text-center text-uppercase py-2">Observaciones registradas</h2>
+    <h2 class="text-center text-uppercase py-2">Observaciones de tus grupos</h2>
     <div class="table-responsive">
         <table class="table table-striped table-bordered">
             <thead>
                 <tr class="text-center text-uppercase lead">
                     <td>Fecha</td>
                     <td>Grupo</td>
-                    <td>Docente</td>
+                    <td>Score</td>
                     <td>Acciones</td>
                 </tr>
             </thead>
             <tbody>
-                @foreach($observaciones as $key => $observacion)
+                @foreach($grupos as $key => $grupo)
+                @foreach ($grupo->observaciones as $observacion)
                 <tr class="text-center">
                     <td>{{ $observacion->fecha }}</td>
-                    <td>{{ $observacion->grupo->grupo }}</td>
-                    <td>{{ $observacion->grupo->profesor->nombre }}</td>
+                    <td>{{ $grupo->grupo }}</td>
+                    <td>
+                        <span class="badge badge-primary">{{$observacion->observacion_items->sum('score_item')}}</span>
+                        / {{$observacion->observacion_items->count()*4}}
+                    </td>
                     <td class="text-center">
-                        <form class="form" action="{{ route('observacion.feedback') }}" method="POST"
+                        <form class="form" action="{{ route('docencia.observacion.feedback') }}" method="POST"
                             class="text-center">
                             @csrf
                             @if ($observacion->fecha_feedback)
-                            <button class="btn btn-outline-primary" type="submit" name="id"
-                                value="{{$observacion->id}}">
-                                Feedback: {{$observacion->fecha_feedback}}
+                            <button class="btn btn-outline-primary" type="submit" name="id" value="{{$observacion->id}}">
+                                Ver feedback
                             </button>
                             @else
                             <button class="btn btn-dark" type="submit" name="id" value="{{$observacion->id}}">
-                                Sin feedback
+                                Registrar feedback
                             </button>
                             @endif
                         </form>
                     </td>
                 </tr>
+                @endforeach
                 @endforeach
             </tbody>
         </table>

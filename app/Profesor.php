@@ -39,4 +39,9 @@ class Profesor extends Authenticatable
     {
         return $this->hasMany('App\Actualizacion', 'id_profesor');
     }
+
+    public function grupos()
+    {
+        return $this->hasMany('App\Grupo', 'id_profesor');
+    }
 }

@@ -126,7 +126,7 @@ class actualizacionesController extends Controller
             $actualizacion->save();
             Session::flash('message', 'Actualización agregada correctamente.');
             
-            return ActualizacionesController::index();
+            return ActualizacionesController::inicio();
         }
 
     }

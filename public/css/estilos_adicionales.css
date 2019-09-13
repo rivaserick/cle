@@ -1,0 +1,94 @@
+:root {
+    --b-cero: rgb(243, 105, 105);
+    --b-uno: rgb(228, 130, 100);
+    --b-dos: rgb(247, 232, 102);
+    --b-tres: rgb(180, 240, 112);
+    --b-cuatro: rgb(88, 248, 93);
+    --cero: #D32F2F;
+    --uno: #FF5722;
+    --dos: #FFEB3B;
+    --tres: #8BC34A;
+    --cuatro: #4CAF50;
+    --blue: #3490dc;
+    --indigo: #6574cd;
+    --purple: #9561e2;
+    --pink: #f66d9b;
+    --red: #e3342f;
+    --orange: #f6993f;
+    --yellow: #ffed4a;
+    --green: #38c172;
+    --teal: #4dc0b5;
+    --cyan: #6cb2eb;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #3490dc;
+    --secondary: #6c757d;
+    --success: #38c172;
+    --info: #6cb2eb;
+    --warning: #ffed4a;
+    --danger: #e3342f;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Nunito", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+.bg-0 {
+    background-color: var(--cero) !important
+}
+.bg-1 {
+    background-color: var(--uno) !important
+}
+.bg-2 {
+    background-color: var(--dos) !important
+}
+.bg-3 {
+    background-color: var(--tres) !important
+}
+.bg-4 {
+    background-color: var(--cuatro) !important
+}
+
+.badge-0 {
+    color: #000;
+    background-color: var(--b-cero) !important
+}
+.badge-1 {
+    color: #000;
+    background-color: var(--b-uno) !important
+}
+.badge-2 {
+    color: #000;
+    background-color: var(--b-dos) !important
+}
+.badge-3 {
+    color: #000;
+    background-color: var(--b-tres) !important
+}
+.badge-4 {
+    color: #000;
+    background-color: var(--b-cuatro) !important
+}
+
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 3px solid var(--primary);
+  }

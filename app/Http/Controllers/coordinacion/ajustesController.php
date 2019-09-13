@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Period;
 use App\Item;
 use App\Categoria;
+use App\Observador;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
@@ -97,6 +98,36 @@ class ajustesController extends Controller
             Session::flash('message', 'El período se estableció correctamente como vigente.');
 
             return redirect()->route('coordinacion.ajustes.inicio');
+        }
+    }
+
+    public function agregarObservador(Request $request)
+    {
+        $reglas = array(
+            'nombre_observador' => 'required|unique:observadors,nombre',
+            'username_observador' => 'required|unique:observadors,username',
+        );
+
+        $validator = Validator::make($request->all(), $reglas);
+
+        $validacion = $validator->validate();
+
+        if ($validator->fails()) {
+
+            return route('coordinacion.ajustes.inicio')
+                ->withErrors($validacion)
+                ->withInput($request->all());
+
+        } else {
+            Observador::create([
+                'nombre' => \request('nombre_observador'),
+                'username' => \request('username_observador'),
+                'password' => bcrypt('observador'),
+            ]);
+
+            Session::flash('message', 'Categoría registrada correctamente.');
+
+            return redirect(route('coordinacion.ajustes.inicio'));
         }
     }
 

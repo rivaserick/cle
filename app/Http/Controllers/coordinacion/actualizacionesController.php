@@ -86,7 +86,7 @@ class actualizacionesController extends Controller
         }
 
         $actualizacion->save();
-        return ActualizacionesController::index();
+        return redirect(\route('coordinacion.actualizaciones.inicio'));
     }
 
 

@@ -54,7 +54,7 @@
                     <div class="row">
                         <div class="col-6">
                             <form action="{{route('coordinacion.actualizaciones.guardar', ['id' => $actualizacion->id])}}" method="post">
-                                @method('PUT')
+                                @method('post')
                                 @csrf
                                 <button type="submit" name="id_status" value="2"
                                     class="btn btn-success btn-block">Aprobar</button>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="col-6">
                             <form action="{{route('coordinacion.actualizaciones.guardar', ['id' => $actualizacion->id])}}" method="post">
-                                @method('PUT')
+                                @method('post')
                                 @csrf
                                 <button type="submit" class="btn btn-danger btn-block" name="id_status" value="3">Rechazar</button>
                                 <div class="col-sm-12 col-12">

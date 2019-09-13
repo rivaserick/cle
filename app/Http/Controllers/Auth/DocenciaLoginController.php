@@ -25,7 +25,7 @@ class DocenciaLoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/docencia/inicio';
+    protected $redirectTo = 'docencia/cuenta/';
 
     /**
      * Create a new controller instance.

@@ -84,13 +84,15 @@
             {{$observacion->general_observations}}
         </textarea>
     </div>
+
+    @if ($observacion->fecha_feedback)
     <div class="input-group mb-3">
         <div class="input-group-prepend">
             <span class="input-group-text">Observee's comments:</span>
         </div>
         <textarea class="form-control" aria-label="observees_comment" disabled>
-                {{$observacion->observees_comment}}
-            </textarea>
+                    {{$observacion->observees_comment}}
+                </textarea>
     </div>
     <div class="row" style="background-color: white">
         @foreach ($faces as $face)
@@ -107,17 +109,42 @@
         </div>
         @endforeach
     </div>
-    @if ($observacion->fecha_feedback)
     <div class="alert alert-success mb-2" role="alert">
-        Feedback de esta observación registrado el: <strong>{{$observacion->fecha_feedback}}</strong>
-    </div>
-    @else
-    <div class="alert alert-warning mb-2" role="alert">
-        Feedback para esta observación <strong>aún no registrado.</strong>
-    </div>
-    @endif
+            Feedback de esta observación registrado el: <strong>{{$observacion->fecha_feedback}}</strong>
+        </div>
     <div class="text-center mb-3">
-        <a href="{{ route('observacion.inicio') }}" class="btn btn-lg btn-dark">Aceptar</a>
+        <a href="{{ route('docencia.observacion.inicio') }}" class="btn btn-lg btn-dark">Aceptar</a>
+        @else
+        <form action="{{ route('docencia.observacion.guardar') }}" method="post">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Observee's comments:</span>
+                </div>
+                <textarea class="form-control" id="observees_comment" name="observees_comment"
+                    aria-label="observees_comment">
+                        {{$observacion->observees_comment}}
+                    </textarea>
+            </div>
+            <div class="row" style="background-color: white">
+                @foreach ($faces as $face)
+                <div class="col-6 col-md-2 text-center">
+                    <label>
+                        <input type="radio" name="id_teacher_self_assessment" value="{{$face->id}}">
+                        <img class="img-fluid" src="{{asset($face->ruta_imagen)}}">
+                    </label>
+                    {{$face->texto}}
+                </div>
+                @endforeach
+            </div>
+            <div class="text-center py-3">
+                <a class="btn btn-danger btn-lg" href="{{ route('docencia.observacion.inicio') }}">Regresar</a>
+                @csrf
+                <button name="id" class="btn btn-lg btn-dark" value="{{$observacion->id}}" type="submit">
+                    Terminar y guardar
+                </button>
+            </div>
+        </form>
+        @endif
+
     </div>
-</div>
-@endsection
+    @endsection

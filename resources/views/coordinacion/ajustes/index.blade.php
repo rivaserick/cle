@@ -18,13 +18,13 @@
                 <div class="col-12 col-lg-2">
                     <label class="sr-only" for="nombre">Nombre del período</label>
                     <input type="text" class="form-control mb-2 mr-sm-2" id="nombre" name="nombre"
-                        placeholder="Ej: 1903" value="{{old('nombre')}}">
+                        placeholder="Ej: 1902.01" value="{{old('nombre')}}">
                 </div>
 
                 <div class="col-12 col-lg-2">
                     <label class="sr-only" for="descripcion">Descripción del período</label>
                     <input type="text" class="form-control mb-2 mr-sm-2" id="descripcion" name="descripcion"
-                        placeholder="Ej: Verano 2019" value="{{old('descripcion')}}">
+                        placeholder="Ej: Verano 2019 Interno" value="{{old('descripcion')}}">
                 </div>
 
                 <div class="col-12 col-lg-3">
@@ -77,6 +77,33 @@
     <div class="card m-2 border-dark">
         <div class="card-header lead">Ajustes de observación docente</div>
         <div class="card-body">
+            <label>Agregar un nuevo observador</label>
+            <form class="form-row" action="{{route('coordinacion.ajustes.agregarObservador')}}" method="POST">
+                @csrf
+                <div class="col-12 col-lg-5">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nombre del observador</span>
+                        </div>
+                        <input type="text" class="form-control" name="nombre_observador" id="nombre_observador" required
+                            value="{{old('nombre_observador')}}">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Username del observador</span>
+                        </div>
+                        <input type="text" class="form-control" name="username_observador" id="username_observador" required
+                            value="{{old('username_observador')}}">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-2">
+                    <button type="submit" class="btn btn-primary mb-2 btn-block">Guardar</button>
+                </div>
+            </form>
+            <hr>
             <label>Agregar una nueva categoria de observación de clases</label>
             <form class="form-row" action="{{route('coordinacion.ajustes.agregarCategoriaObservaciones')}}"
                 method="POST">

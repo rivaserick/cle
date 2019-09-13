@@ -10,7 +10,7 @@
 <div class="container">
     <h2 class="text-center text-uppercase py-2">FEEDBACK</h2>
     <div class="row">
-        <div class="col-sm-6 mb-3 col-12">
+        <div class="col-sm-4 mb-3 col-12">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Grupo:</span>
@@ -18,12 +18,20 @@
                 <input type="text" class="form-control" value="{{$observacion->grupo->grupo}}" disabled>
             </div>
         </div>
-        <div class="col-sm-6 mb-3 col-12">
+        <div class="col-sm-4 mb-3 col-12">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Docente:</span>
                 </div>
                 <input type="text" class="form-control" value="{{$observacion->grupo->profesor->nombre}}" disabled>
+            </div>
+        </div>
+        <div class="col-sm-4 mb-3 col-12">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Observador:</span>
+                </div>
+                <input type="text" class="form-control" value="{{$observacion->observador->nombre}}" disabled>
             </div>
         </div>
     </div>
@@ -109,15 +117,15 @@
     </div>
     @if ($observacion->fecha_feedback)
     <div class="alert alert-success mb-2" role="alert">
-        Feedback de esta observación registrado el: <strong>{{$observacion->fecha_feedback}}</strong>
-    </div>
+            Feedback de esta observación registrado el: <strong>{{$observacion->fecha_feedback}}</strong>
+        </div>
     @else
     <div class="alert alert-warning mb-2" role="alert">
-        Feedback para esta observación <strong>aún no registrado.</strong>
-    </div>
+            Feedback para esta observación <strong>aún no registrado.</strong>
+        </div>
     @endif
     <div class="text-center mb-3">
-        <a href="{{ route('observacion.inicio') }}" class="btn btn-lg btn-dark">Aceptar</a>
+        <a href="{{ route('coordinacion.observacion.inicio') }}" class="btn btn-lg btn-dark">Aceptar</a>
     </div>
 </div>
 @endsection

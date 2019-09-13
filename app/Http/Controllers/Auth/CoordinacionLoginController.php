@@ -25,7 +25,7 @@ class CoordinacionLoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/coordinacion/inicio';
+    protected $redirectTo = '/coordinacion/cuenta/';
 
     /**
      * Create a new controller instance.

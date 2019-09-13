@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Observacion;
 
-use App\Categoria;
-use App\Grupo;
 use App\Http\Controllers\Controller;
+use App\Categoria;
+use App\Teacher_selfassessment;
+use App\Grupo;
 use App\Observacion;
 use App\Observacion_item;
 use App\Profesor;
@@ -28,9 +29,14 @@ class observacionController extends Controller
 
     public function inicio()
     {
-        $observaciones = Observacion::all();
-        return \view('observacion.index')
-            ->with('observaciones', $observaciones);
+        if (auth()->guard('observacion')->user()->password == auth()->guard('observacion')->user()->original_password) {
+            return \view('observacion.cuenta.index');
+        } else {
+            $id_observador = auth()->guard('observacion')->user()->id;
+            $observaciones = Observacion::where('id_observador', $id_observador)->get();
+            return \view('observacion.index')
+                ->with('observaciones', $observaciones);
+        }
     }
 
     /**
@@ -40,7 +46,7 @@ class observacionController extends Controller
      */
     public function registrar()
     {
-        $grupos = Grupo::where('id', '!=', 'vjfkd')->get();
+        $grupos = Grupo::all();
         $profesores = Profesor::all();
         $categorias = Categoria::all();
         return \view('observacion.create')
@@ -59,6 +65,7 @@ class observacionController extends Controller
      */
     public function guardar(Request $request)
     {
+        $id_observador = auth()->guard('observacion')->user()->id;
         $reglas = array(
             'codigo_del_grupo' => 'required',
             'strengths_observed' => 'required',
@@ -84,7 +91,7 @@ class observacionController extends Controller
                 'strengths_observed' => \request('strengths_observed'),
                 'suggestions_improvement' => \request('suggestions_improvement'),
                 'general_observations' => \request('general_observations'),
-                'id_observador' => auth()->guard('observacion')->user()->id,
+                'id_observador' => $id_observador,
                 'fecha' => Carbon::now(),
 
             ]);
@@ -107,6 +114,17 @@ class observacionController extends Controller
 
             return \redirect(route('observacion.inicio'));
         }
-
+    }
+    public function feedback(Request $request)
+    {
+        $faces = Teacher_selfassessment::all();
+        $observacion = Observacion::find(\request('id'));
+        $categorias = Categoria::all();
+        return \view('observacion.show')
+            ->with([
+                'observacion' => $observacion,
+                'categorias' => $categorias,
+                'faces' => $faces,
+            ]);
     }
 }
