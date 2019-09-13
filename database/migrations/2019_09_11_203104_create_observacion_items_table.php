@@ -13,7 +13,9 @@ class CreateObservacionItemsTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('observacion_items', function (Blueprint $table) {
+            $table->bigIncrements('id');            
             $table->integer('id_observacion')->unsigned();
             $table->foreign('id_observacion')->references('id')->on('observacions');
             $table->integer('id_item')->unsigned();

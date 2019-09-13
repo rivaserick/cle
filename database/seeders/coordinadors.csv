@@ -1,3 +1,3 @@
-id,id_user,created_at,updated_at,username,password,nombre
-1,4,2019-08-12 14:35:56,2019-08-12 14:35:56,'jmcuin',,'José Manuel Cuin Jacuinde'
-2,5,2019-08-12 14:35:56,2019-08-12 14:35:56,'jlgutierrez',,'José Luis Guitiérrez Cortés'
+id,id_user,created_at,updated_at,nombre,username,password,original_password
+2,5,2019-08-12 14:35:56,2019-09-06 13:08:29,José Luis Guitiérrez Cortés,jlgutierrez,'',''
+1,4,2019-08-12 14:35:56,2019-09-06 13:09:32,José Manuel Cuin Jacuinde,jmcuin,$2y$10$qBHLiuACeC4dicB2hpzMGeobgl/bJ2wp6r54qbv7M.qFy5hWc4ZeO,$2y$10$qBHLiuACeC4dicB2hpzMGeobgl/bJ2wp6r54qbv7M.qFy5hWc4ZeO

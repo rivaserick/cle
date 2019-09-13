@@ -13,8 +13,12 @@ class CreateMensajesTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('mensajes', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('mensaje');
+            $table->integer('id_actualizacion')->unsigned();
+            $table->foreign('id_actualizacion')->references('id')->on('actualizacions');
             $table->timestamps();
         });
     }

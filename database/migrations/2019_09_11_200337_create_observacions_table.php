@@ -13,9 +13,10 @@ class CreateObservacionsTable extends Migration
      */
     public function up()
     {
+        // Final
         Schema::create('observacions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('id_grupo', 20);
+            $table->string('id_grupo');
             $table->foreign('id_grupo')->references('id')->on('grupos');
             $table->integer('id_observador')->unsigned();
             $table->foreign('id_observador')->references('id')->on('observadors');

@@ -13,6 +13,7 @@ class CreateLineaCapacitacionsTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('linea_capacitacions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');

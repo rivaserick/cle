@@ -13,12 +13,14 @@ class CreatePeriodsTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('periods', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
             $table->string('descripcion');
             $table->timestamp('fecha_inicio');
             $table->timestamp('fecha_fin');
+            $table->boolean('vigente');
             $table->timestamps();
         });
     }

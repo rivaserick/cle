@@ -1,0 +1,7 @@
+id,texto,ruta_imagen,created_at,updated_at
+1,'I''m doing brilliantly',media/face_feedback/1.jpg,2019-09-12 15:43:44,2019-09-12 15:43:44
+2,'I''m doing very well',media/face_feedback/2.jpg,2019-09-12 15:44:22,2019-09-12 15:44:22
+3,'I''m doing well',media/face_feedback/3.jpg,2019-09-12 15:44:43,2019-09-12 15:44:43
+4,I can do better,media/face_feedback/4.jpg,2019-09-12 15:45:06,2019-09-12 15:45:06
+5,I need to try harder,media/face_feedback/5.jpg,2019-09-12 15:45:25,2019-09-12 15:45:25
+6,I need a bit of extra help,media/face_feedback/6.jpg,2019-09-12 15:45:48,2019-09-12 15:45:48

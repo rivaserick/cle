@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddColumnsToObservacionsTable extends Migration
+class AddColumnsToObservacionsTableThree extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddColumnsToObservacionsTable extends Migration
     public function up()
     {
         Schema::table('observacions', function (Blueprint $table) {
-            $table->integer('id_teacher_self_assessment')->unsigned();
-            $table->foreign('id_teacher_self_assessment')->references('id')->on('teacher_self_assessments');
+            $table->timestamp('fecha_feedback');
+            
         });
     }
 

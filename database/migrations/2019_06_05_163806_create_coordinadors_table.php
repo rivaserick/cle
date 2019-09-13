@@ -13,10 +13,13 @@ class CreateCoordinadorsTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('coordinadors', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('id_user')->unsigned()->after('id');
-            //$table->foreign('id_user')->references('id')->on('users');
+            $table->string('nombre')->after('id');
+            $table->string('username')->unique()->nullable()->default(null)->after('nombre');
+            $table->string('password')->default('')->after('username');
+            $table->string('original_password')->nullable();
             $table->timestamps();
         });
     }

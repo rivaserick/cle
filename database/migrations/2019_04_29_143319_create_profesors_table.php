@@ -13,10 +13,14 @@ class CreateProfesorsTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('profesors', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nombre');
-            $table->integer('nivel');
+            $table->string('nombre')->after('id');
+            $table->string('mcer');
+            $table->string('username')->unique()->nullable()->default(null)->after('nombre');
+            $table->string('password')->default('')->after('username');
+            $table->string('original_password')->nullable();
             $table->timestamps();
         });
     }

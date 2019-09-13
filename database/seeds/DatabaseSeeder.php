@@ -19,6 +19,10 @@ class DatabaseSeeder extends Seeder
             StatusesTableSeeder::class,
             Linea_CapacitacionsTableSeeder::class,
             Sublinea_CapacitacionsTableSeeder::class,
-        ]);
+            CategoriasTableSeeder::class,
+            ItemsTableSeeder::class,
+            TeacherSelfAssessmentTableSeeder::class,
+            GruposTableSeeder::class,
+            ]);
     }
 }

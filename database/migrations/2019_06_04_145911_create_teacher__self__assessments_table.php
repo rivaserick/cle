@@ -13,6 +13,7 @@ class CreateTeacherSelfAssessmentsTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('teacher_self_assessments', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('texto');

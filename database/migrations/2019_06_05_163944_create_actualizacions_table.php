@@ -13,6 +13,7 @@ class CreateActualizacionsTable extends Migration
      */
     public function up()
     {
+        //Final
         Schema::create('actualizacions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre_curso');
