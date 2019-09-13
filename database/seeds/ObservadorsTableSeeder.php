@@ -28,15 +28,23 @@ class ObservadorsTableSeeder extends Seeder
                 if (!$header) {
                     $header = $row;
                 } else {*/
-
                     $seed = new Observador; //
 
-                    $seed->nombre = 'Juan Perez';
-                    $seed->username = 'juanperez';
+                    $seed->nombre = 'Martha Lucia Romero Olivares';
+                    $seed->username = 'martharomero';
                     $seed->password = bcrypt('observador');
-                    $seed->original_password = bcrypt('observador');
+                    $seed->original_password = $seed->password;
 
                     $seed->save();
+                    $seed = new Observador; //
+
+                    $seed->nombre = 'Observador Test';
+                    $seed->username = 'obtest';
+                    $seed->password = bcrypt('observador');
+                    $seed->original_password = $seed->password;
+
+                    $seed->save();
+
           /*          echo var_dump($row);
                 }
             }
