@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             //UsersTableSeeder::class,
             ProfesorsTableSeeder::class,
             CoordinadorsTableSeeder::class,
+            ObservadorsTableSeeder::class,
             PeriodsTableSeeder::class,
             StatusesTableSeeder::class,
             Linea_CapacitacionsTableSeeder::class,
