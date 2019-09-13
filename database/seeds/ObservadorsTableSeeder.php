@@ -3,7 +3,7 @@
 use App\Observador;
 use Illuminate\Database\Seeder;
 
-class ObservadorTableSeeder extends Seeder
+class ObservadorsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
