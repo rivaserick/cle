@@ -10,39 +10,46 @@
     <form method="POST" action="{{ route('observacion.guardar') }}">
         @csrf
         <div class="row">
+            <div class="col-sm-8 mb-3 col-12">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Docente:</span>
+                    </div>
+                    <select class="custom-select" id="nombre_del_docente" name="nombre_del_docente"
+                        style="font-size: 75%" value="{{old('nombre_del_docente')}}" placeholder="Seleccione..."
+                        onchange="mostrarGrupos();" required>
+                        @foreach ($grupos as $grupo)
+                        <option value="{{$grupo->profesor->id}}">{{$grupo->profesor->nombre}}</option>
+                        @endforeach
+                    </select>
+                </div>
+            </div>
             <div class="col-sm-4 mb-3 col-12">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="codigo_del_grupo">Grupo:</label>
                     </div>
                     <select class="custom-select" id="codigo_del_grupo" name="codigo_del_grupo" style="font-size: 75%"
-                        value="{{old('codigo_del_grupo')}}" placeholder="Seleccione..." onchange="mostrarDocente(this);"
-                        required>
-                        
-                        @foreach ($grupos as $grupo)
-                        <option value="{{$grupo->grupo}}">{{$grupo->grupo}}</option>
-                        @endforeach
+                        value="{{old('codigo_del_grupo')}}" placeholder="Seleccione..." required>
                     </select>
-                </div>
-            </div>
-            <div class="col-sm-8 mb-3 col-12">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Docente:</span>
-                    </div>
-                    <input type="text" class="form-control" name="nombre_del_docente" id="nombre_del_docente"
-                        value="{{old('nombre_del_docente')}}" disabled>
                 </div>
             </div>
         </div>
         <ul class="list-group mb-3">
+            @php
+            $n = 0;
+            @endphp
             @foreach ($categorias as $categoria)
             <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-dark">
                 {{$categoria->nombre_categoria}}
             </li>
+
             @foreach ($categoria->items as $item)
+            @php
+            $n++;
+            @endphp
             <li class="list-group-item d-flex justify-content-between align-items-center">
-                {{$item->texto_item}}
+                {{$n.') '.$item->texto_item}}
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-danger">
                         <input type="radio" name="{{$item->id}}" value="0"><strong>0</strong>
@@ -100,17 +107,29 @@
 </div>
 <script src="{{ asset('js/jquery-3.4.1.min.js') }}"></script>
 <script>
-    function mostrarDocente(valor) {
-        var grupo_seleccionado = $('#codigo_del_grupo').val();
+    function mostrarGrupos() {
+        $('#codigo_del_grupo').html('');
         var grupos = {!! json_encode($grupos->toArray()) !!};
-        var profesores = {!! json_encode($profesores->toArray()) !!};
-        var docente_grupo = grupos.find((x => x.grupo == grupo_seleccionado));
-        docente = profesores.find((x => x.id == docente_grupo.id_profesor));
-        $('#nombre_del_docente').val(docente.nombre);
+        grupos.forEach(element => {
+            if (element.id_profesor == $('#nombre_del_docente').val()) {
+                var opcion = '<option value='+element.grupo+'>'+element.grupo+'</option>';
+                $('#codigo_del_grupo').append(opcion);
+            }
+        });
+    }
+    function eliminarRepetidos() {
+        var code = {};
+        $("select[name='nombre_del_docente'] > option").each(function () {
+            if(code[this.text]) {
+                $(this).remove();
+            } else {
+                code[this.text] = this.value;
+            }
+        });
     }
     $(document).ready(function () {
-        mostrarDocente($('#codigo_del_grupo').val());
-        $('#codigo_del_grupo').click(mostrarDocente($('#codigo_del_grupo').val));
+        eliminarRepetidos();
+        mostrarGrupos();
     });
 </script>
 @endsection

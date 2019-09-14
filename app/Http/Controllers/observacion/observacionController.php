@@ -47,13 +47,11 @@ class observacionController extends Controller
     public function registrar()
     {
         $grupos = Grupo::all();
-        $profesores = Profesor::all();
         $categorias = Categoria::all();
         return \view('observacion.create')
             ->with([
                 'grupos' => $grupos,
                 'categorias' => $categorias,
-                'profesores' => $profesores,
             ]);
     }
 
