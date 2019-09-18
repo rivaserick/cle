@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers\Observacion;
 
-use App\Http\Controllers\Controller;
 use App\Categoria;
-use App\Teacher_selfassessment;
 use App\Grupo;
+use App\Http\Controllers\Controller;
 use App\Observacion;
 use App\Observacion_item;
-use App\Profesor;
+use App\Teacher_selfassessment;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -84,8 +83,10 @@ class observacionController extends Controller
 
         } else {
 
+            $id_grupo = str_replace('_', ' ', \request('codigo_del_grupo'));
+
             $observacion = Observacion::create([
-                'id_grupo' => \request('codigo_del_grupo'),
+                'id_grupo' => $id_grupo,
                 'strengths_observed' => \request('strengths_observed'),
                 'suggestions_improvement' => \request('suggestions_improvement'),
                 'general_observations' => \request('general_observations'),
@@ -98,6 +99,7 @@ class observacionController extends Controller
             unset($scores['codigo_del_grupo']);
             unset($scores['strengths_observed']);
             unset($scores['suggestions_improvement']);
+            unset($scores['nombre_del_docente']);
             unset($scores['general_observations']);
             unset($scores['_token']);
 

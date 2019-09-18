@@ -112,7 +112,8 @@
         var grupos = {!! json_encode($grupos->toArray()) !!};
         grupos.forEach(element => {
             if (element.id_profesor == $('#nombre_del_docente').val()) {
-                var opcion = '<option value='+element.grupo+'>'+element.grupo+'</option>';
+                var codigo_grupo = element.grupo.split(' ').join('_');
+                var opcion = "<option value="+codigo_grupo+">"+element.grupo+"</option>";
                 $('#codigo_del_grupo').append(opcion);
             }
         });
