@@ -80,6 +80,7 @@ Route::group(['prefix' => 'observacion', 'as' => 'observacion.', 'namespace' => 
     Route::get('registrar', 'observacionController@registrar')->name('registrar');
     Route::post('guardar', 'observacionController@guardar')->name('guardar');
     Route::post('feedback', 'observacionController@feedback')->name('feedback');
+    Route::get('grupos', 'observacionController@grupos')->name('grupos');
     Route::group(['prefix' => 'cuenta', 'as' => 'cuenta.'], function () {
         Route::get('/', 'cuentaController@inicio')->name('inicio');
         Route::post('cambiarPassword', 'cuentaController@cambiarPassword')->name('cambiarPassword');
