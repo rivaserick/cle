@@ -64,32 +64,32 @@
         <div class="input-group-prepend">
             <span class="input-group-text">Strengths observed:</span>
         </div>
-        <textarea class="form-control" aria-label="strengths_observed" disabled>
-            {{$observacion->strengths_observed}}
+        <textarea class="form-control" aria-label="strengths_observed_text" disabled>
+            {{$observacion->strengths_observed_text}}
         </textarea>
     </div>
     <div class="input-group mb-3">
         <div class="input-group-prepend">
             <span class="input-group-text">Suggestions for improvement:</span>
         </div>
-        <textarea class="form-control" aria-label="suggestions_improvement" disabled>
-            {{$observacion->suggestions_improvement}}
+        <textarea class="form-control" aria-label="suggestions_improvement_text" disabled>
+            {{$observacion->suggestions_improvement_text}}
         </textarea>
     </div>
     <div class="input-group mb-3">
         <div class="input-group-prepend">
             <span class="input-group-text">General observations:</span>
         </div>
-        <textarea class="form-control" aria-label="general_observations" disabled>
-            {{$observacion->general_observations}}
+        <textarea class="form-control" aria-label="general_observations_text" disabled>
+            {{$observacion->general_observations_text}}
         </textarea>
     </div>
     <div class="input-group mb-3">
         <div class="input-group-prepend">
             <span class="input-group-text">Observee's comments:</span>
         </div>
-        <textarea class="form-control" aria-label="observees_comment" disabled>
-                {{$observacion->observees_comment}}
+        <textarea class="form-control" aria-label="observees_comment_text" disabled>
+                {{$observacion->observees_comment_text}}
             </textarea>
     </div>
     <div class="row" style="background-color: white">

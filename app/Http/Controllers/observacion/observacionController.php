@@ -31,11 +31,18 @@ class observacionController extends Controller
         if (auth()->guard('observacion')->user()->password == auth()->guard('observacion')->user()->original_password) {
             return \view('observacion.cuenta.index');
         } else {
-            $id_observador = auth()->guard('observacion')->user()->id;
-            $observaciones = Observacion::where('id_observador', $id_observador)->get();
+            $id_observador = auth()->guard('observacion')->user();
+        $observaciones = $id_observador->observaciones;
             return \view('observacion.index')
                 ->with('observaciones', $observaciones);
         }
+    }
+
+    public function grupos()
+    {
+        $grupos = Grupo::all();
+        return \view('observacion.grupos')
+            ->with('grupos', $grupos);
     }
 
     /**
@@ -87,9 +94,12 @@ class observacionController extends Controller
 
             $observacion = Observacion::create([
                 'id_grupo' => $id_grupo,
-                'strengths_observed' => \request('strengths_observed'),
-                'suggestions_improvement' => \request('suggestions_improvement'),
-                'general_observations' => \request('general_observations'),
+                'strengths_observed_text' => \request('strengths_observed'),
+                'suggestions_improvement_text' => \request('suggestions_improvement'),
+                'general_observations_text' => \request('general_observations'),
+                'strengths_observed' => "",
+                'suggestions_improvement' => "",
+                'general_observations' => "",
                 'id_observador' => $id_observador,
                 'fecha' => Carbon::now(),
 

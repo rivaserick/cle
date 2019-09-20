@@ -34,4 +34,9 @@ class Observador extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function observaciones()
+    {
+        return $this->hasMany('App\Observacion', 'id_observador');
+    }
 }
