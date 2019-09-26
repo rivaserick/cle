@@ -35,6 +35,11 @@
                 </div>
             </div>
         </div>
+        <div class="row mb-1">
+            <div class="col-12 text-center">
+                <!--<a id="hora_inicio" name="hora_inicio" value="" onclick="setHoraInicio()" class="btn btn-success">Registrar hora de inicio de observación</a>-->
+            </div>
+        </div>
         <ul class="list-group mb-3">
             @php
             $n = 0;
@@ -51,7 +56,7 @@
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 {{$n.') '.$item->texto_item}}
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-danger">
+                    <label class="btn btn-outline-danger">
                         <input type="radio" name="{{$item->id}}" value="0"><strong>0</strong>
                     </label>
                     <label class="btn btn-outline-dark">
@@ -63,7 +68,7 @@
                     <label class="btn btn-outline-dark">
                         <input type="radio" name="{{$item->id}}" value="3"><strong>3</strong>
                     </label>
-                    <label class="btn btn-success">
+                    <label class="btn btn-outline-success">
                         <input type="radio" name="{{$item->id}}" value="4"><strong>4</strong>
                     </label>
                 </div>
@@ -127,6 +132,11 @@
                 code[this.text] = this.value;
             }
         });
+    }
+    function setHoraInicio() {
+        $('#hora_inicio').text(new Date());
+        alert(new Date());
+        alert($('#hora_inicio').text());
     }
     $(document).ready(function () {
         eliminarRepetidos();
