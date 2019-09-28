@@ -65,7 +65,7 @@ class observacionController extends Controller
 
             $observacion = Observacion::find(\request('id'));
 
-            $observacion->observees_comment = \request('observees_comment');
+            $observacion->observees_comment_text = \request('observees_comment');
             $observacion->id_teacher_self_assessment = \request('id_teacher_self_assessment');
             $observacion->fecha_feedback = Carbon::now();
             $observacion->save();
