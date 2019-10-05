@@ -48,7 +48,6 @@ class observacionController extends Controller
         $id_profesor = auth()->guard('docencia')->user()->id;
         $reglas = array(
             'id' => 'required|integer',
-            'observees_comment' => 'required',
             'id_teacher_self_assessment' => 'required|integer',
         );
 
@@ -83,6 +82,14 @@ class observacionController extends Controller
                 'categorias' => $categorias,
                 'faces' => $faces,
             ]);
+    }
+
+    public function grupos(Request $request){
+        
+        // TODO: DEFINIR LA VARIABLE A ENVIAR Y LA ESTRUCTURA DE LA VISTA
+
+        return \view('docencia.observacion.index')
+            ->with('grupos', $grupos);
     }
 
 }
