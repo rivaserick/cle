@@ -129,7 +129,7 @@
                 @foreach ($faces as $face)
                 <div class="col-6 col-md-2 text-center">
                     <label>
-                        <input type="radio" name="id_teacher_self_assessment" value="{{$face->id}}">
+                        <input type="radio" name="id_teacher_self_assessment" value="{{$face->id}}" required>
                         <img class="img-fluid" src="{{asset($face->ruta_imagen)}}">
                     </label>
                     {{$face->texto}}
