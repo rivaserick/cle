@@ -32,7 +32,7 @@ class observacionController extends Controller
             return \view('observacion.cuenta.index');
         } else {
             $id_observador = auth()->guard('observacion')->user();
-        $observaciones = $id_observador->observaciones;
+            $observaciones = $id_observador->observaciones->sortBy('fecha');
             return \view('observacion.index')
                 ->with('observaciones', $observaciones);
         }

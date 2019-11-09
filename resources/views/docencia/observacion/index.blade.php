@@ -8,7 +8,7 @@
     @endif
 </div>
 <div class="container">
-    @if ($grupos->isEmpty())
+    @if ($observaciones->isEmpty())
     <h2 class="text-center text-uppercase py-2">No han registrado observaciones para tus grupos aún.</h2>
     @else
     <h2 class="text-center text-uppercase py-2">Observaciones de tus grupos</h2>
@@ -23,11 +23,10 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($grupos as $key => $grupo)
-                @foreach ($grupo->observaciones as $observacion)
+                @foreach ($observaciones as $observacion)
                 <tr class="text-center">
                     <td>{{ $observacion->fecha }}</td>
-                    <td>{{ $grupo->grupo }}</td>
+                    <td>{{ $observacion->grupo->grupo }}</td>
                     <td>
                         <span class="badge badge-primary">{{$observacion->observacion_items->sum('score_item')}}</span>
                         / {{$observacion->observacion_items->count()*4}}
@@ -48,7 +47,6 @@
                         </form>
                     </td>
                 </tr>
-                @endforeach
                 @endforeach
             </tbody>
         </table>

@@ -29,7 +29,7 @@ class observacionController extends Controller
 
     public function inicio()
     {
-        $observaciones = Observacion::all();
+        $observaciones = Observacion::orderBy('created_at')->get();
         return \view('coordinacion.observacion.index')
             ->with('observaciones', $observaciones);
     }

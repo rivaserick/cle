@@ -32,8 +32,10 @@ class observacionController extends Controller
         $profesor = auth()->guard('docencia')->user();
 
         $grupos = $profesor->grupos;
+        $observaciones = $grupos->pluck('observaciones')[0]->sortBy('fecha');
+        //return $observaciones;
         return \view('docencia.observacion.index')
-            ->with('grupos', $grupos);
+            ->with('observaciones', $observaciones);
     }
 
     /**
