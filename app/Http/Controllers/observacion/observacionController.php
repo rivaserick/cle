@@ -127,7 +127,7 @@ class observacionController extends Controller
     }
     public function feedback(Request $request)
     {
-        $faces = Teacher_selfassessment::all();
+        $faces = Teacher_selfassessment::all()->sortBy('id');
         $observacion = Observacion::find(\request('id'));
         $categorias = Categoria::all();
         return \view('observacion.show')
