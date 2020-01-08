@@ -31,8 +31,8 @@ class observacionController extends Controller
     {
         $profesor = auth()->guard('docencia')->user();
 
-        $grupos = $profesor->grupos;
-        $observaciones = $grupos->pluck('observaciones')[0]->sortBy('fecha');
+        $grupos = $profesor->grupos->pluck('id');
+        $observaciones = Observacion::whereIn('id_grupo', $grupos)->get();
         //return $observaciones;
         return \view('docencia.observacion.index')
             ->with('observaciones', $observaciones);
