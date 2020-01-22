@@ -73,7 +73,7 @@ class actualizacionesController extends Controller
     {
         $reglas = array(
             'nombre_curso' => 'required',
-            'descripcion' => 'required|min:15',
+            'descripcion' => 'required|min:15|max:250',
             'evidencia' => 'required|file|mimes:pdf|max:5120',
             'duracion' => 'required|integer|min:1',
             'instruido_por' => 'required',
