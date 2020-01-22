@@ -24,8 +24,8 @@
             </div>
             <div class="col-sm-12 col-12">
                 <div class="form-group">
-                    <label for="descripcion">Descripción (min. 15 caracteres.)</label>
-                    <textarea class="form-control" name="descripcion" id="descripcion" rows="2" required>{{old('descripcion')}}</textarea>
+                    <label for="descripcion">Descripción (min. 15 caracteres, máx. 250 caracteres.)</label>
+                    <textarea class="form-control" name="descripcion" id="descripcion" rows="2" min="15" max="250" required>{{old('descripcion')}}</textarea>
                 </div>
             </div>
             <div class="col-sm-6 mb-3 col-6">
