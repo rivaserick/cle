@@ -17,14 +17,12 @@
                 @csrf
                 <div class="col-12 col-lg-2">
                     <label class="sr-only" for="nombre">Nombre del período</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="nombre" name="nombre"
-                        placeholder="Ej: 1902.01" value="{{old('nombre')}}">
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="nombre" name="nombre" placeholder="Ej: 1902.1" value="{{old('nombre')}}">
                 </div>
 
                 <div class="col-12 col-lg-2">
                     <label class="sr-only" for="descripcion">Descripción del período</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="descripcion" name="descripcion"
-                        placeholder="Ej: Verano 2019 Interno" value="{{old('descripcion')}}">
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="descripcion" name="descripcion" placeholder="Ej: Verano 2019 Interno" value="{{old('descripcion')}}">
                 </div>
 
                 <div class="col-12 col-lg-3">
@@ -32,8 +30,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="fecha_de_inicio">Fecha de inicio</span>
                         </div>
-                        <input type="date" name="fecha_de_inicio" id="fecha_de_inicio" class="form-control"
-                            aria-describedby="fecha_de_inicio" value="{{old('fecha_de_inicio')}}">
+                        <input type="date" name="fecha_de_inicio" id="fecha_de_inicio" class="form-control" aria-describedby="fecha_de_inicio" value="{{old('fecha_de_inicio')}}">
                     </div>
                 </div>
 
@@ -42,8 +39,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="fecha_de_fin">Fecha de fin</span>
                         </div>
-                        <input type="date" name="fecha_de_fin" id="fecha_de_fin" class="form-control"
-                            aria-describedby="fecha_de_fin" value="{{old('fecha_de_fin')}}">
+                        <input type="date" name="fecha_de_fin" id="fecha_de_fin" class="form-control" aria-describedby="fecha_de_fin" value="{{old('fecha_de_fin')}}">
                     </div>
                 </div>
 
@@ -85,8 +81,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Nombre del observador</span>
                         </div>
-                        <input type="text" class="form-control" name="nombre_observador" id="nombre_observador" required
-                            value="{{old('nombre_observador')}}">
+                        <input type="text" class="form-control" name="nombre_observador" id="nombre_observador" required value="{{old('nombre_observador')}}">
                     </div>
                 </div>
                 <div class="col-12 col-lg-5">
@@ -94,8 +89,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Username del observador</span>
                         </div>
-                        <input type="text" class="form-control" name="username_observador" id="username_observador" required
-                            value="{{old('username_observador')}}">
+                        <input type="text" class="form-control" name="username_observador" id="username_observador" required value="{{old('username_observador')}}">
                     </div>
                 </div>
 
@@ -105,13 +99,11 @@
             </form>
             <hr>
             <label>Agregar una nueva categoria de observación de clases</label>
-            <form class="form-row" action="{{route('coordinacion.ajustes.agregarCategoriaObservaciones')}}"
-                method="POST">
+            <form class="form-row" action="{{route('coordinacion.ajustes.agregarCategoriaObservaciones')}}" method="POST">
                 @csrf
                 <div class="col-12 col-lg-10">
                     <label class="sr-only" for="nombre_categoria">Nombre de la categoría</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="nombre_categoria" name="nombre_categoria"
-                        placeholder="Ej: TEACHING APPROACHES" value="{{old('nombre_categoria')}}">
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="nombre_categoria" name="nombre_categoria" placeholder="Ej: TEACHING APPROACHES" value="{{old('nombre_categoria')}}">
                 </div>
                 <div class="col-12 col-lg-2">
                     <button type="submit" class="btn btn-primary mb-2 btn-block">Guardar</button>
@@ -126,8 +118,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Texto del ítem</span>
                         </div>
-                        <textarea class="form-control" name="texto_item" id="texto_item" rows="2"
-                            required>{{old('texto_item')}}</textarea>
+                        <textarea class="form-control" name="texto_item" id="texto_item" rows="2" required>{{old('texto_item')}}</textarea>
                     </div>
                 </div>
                 <div class="col-12 col-lg-9 py-2">
@@ -152,24 +143,120 @@
         </div>
     </div>
     <hr>
-    <div class="card m-2 border-dark">
+    <!-- <div class="card m-2 border-dark">
         <div class="card-header lead">Importar profesores activos a la base de datos (desde archivo .csv)</div>
         <div class="card-body">
-            <form class="form-row" enctype="multipart/form-data" method="POST"
-                action="{{route('coordinacion.ajustes.altaDocentesActivos')}}">
+            <form class="form-row" enctype="multipart/form-data" method="POST" action="{{route('coordinacion.ajustes.altaDocentesActivos')}}">
                 @csrf
                 <div class="col-12 col-lg-3">
                     <label for="archivo_docentes">Archivo (formato: .csv):</label>
                 </div>
                 <div class="col-12 col-lg-7 mb-2">
-                    <input type="file" class="form-control-file" name="archivo_docentes" id="archivo_docentes"
-                        accept=".csv" required>
+                    <input type="file" class="form-control-file" name="archivo_docentes" id="archivo_docentes" accept=".csv" required>
                 </div>
                 <div class="col-12 col-lg-2 mb-2">
                     <button type="submit" class="btn btn-primary btn-block">Importar archivo</button>
                 </div>
+            </form>
         </div>
-        </form>
+    </div> -->
+
+    <div class="card m-2 border-dark">
+        <div class="card-header lead">Agregar un profesor</div>
+        <div class="card-body">
+            <form class="form-row" method="POST" action="{{route('coordinacion.ajustes.agregarProfesor')}}">
+                @csrf
+                <div class="col-12 col-lg-5">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="nombre_profesor_label">Nombre</span>
+                        </div>
+                        <input type="text" name="nombre_profesor" id="nombre_profesor" class="form-control" aria-describedby="nombre_profesor_label" value="{{old('nombre_profesor')}}" placeholder="Ej: Juan Perez Perez">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="username_profesor_label">Nombre</span>
+                        </div>
+                        <input type="text" name="username_profesor" id="username_profesor" class="form-control" aria-describedby="username_profesor_label" value="{{old('nombre_profesor')}}" placeholder="Ej: juanperez">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 mb-2">
+                    <button type="submit" class="btn btn-primary btn-block">Agregar</button>
+                </div>
+            </form>
+            <hr>
+            <label>Reiniciar password de profesor (nueva password: "DOCENTE")</label>
+            <form class="form-row" method="POST" action="{{route('coordinacion.ajustes.reiniciarPassword')}}">
+                @csrf
+                <div class="col-12 col-lg-9">
+                    <select name="reset_password_profesor_id" id="reset_password_profesor_id" class="form-control mb-2">
+                        @foreach ($profesors as $profesor)
+                        <option value="{{$profesor->id}}">
+                            {{$profesor->nombre}} ({{$profesor->username}}) 
+                        </option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <button class="btn btn-primary mb-2 btn-block" type="submit">Reiniciar Password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="card m-2 border-dark">
+        <div class="card-header lead">Administración de grupos</div>
+        <div class="card-body">
+            <label>Agregar un nuevo grupo</label>
+            <form class="form-row" action="{{route('coordinacion.ajustes.agregarGrupo')}}" method="POST">
+                @csrf
+                <div class="col-12 col-lg-2">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="clave_grupo_label">Clave:</span>
+                        </div>
+                        <input type="text" name="clave_grupo" id="clave_grupo" class="form-control" aria-describedby="clave_grupo_label" value="{{old('clave_grupo')}}" placeholder="Ej: S METH I A">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="periodo_grupo">Período:</label>
+                        </div>
+                        <select class="form-control" id="periodo_grupo" name="periodo_grupo">
+                            @foreach ($periodos as $periodo)
+                            <option value="{{$periodo->id}}">
+                                {{$periodo->nombre}} ({{$periodo->descripcion}}
+                                @if ($periodo->vigente)
+                                , vigente
+                                @endif
+                                )
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="profesor_grupo">Profesor:</label>
+                        </div>
+                        <select class="form-control" id="profesor_grupo" name="profesor_grupo">
+                            @foreach ($profesors as $profesor)
+                            <option value="{{$profesor->id}}">
+                                {{$profesor->nombre}}
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>                
+                <div class="col-12 col-lg-2">
+                    <button type="submit" class="btn btn-primary mb-2 btn-block">Guardar</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     @endsection

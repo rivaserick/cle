@@ -4,8 +4,10 @@ namespace App\Http\Controllers\coordinacion;
 
 use App\Http\Controllers\Controller;
 use App\Period;
+use App\Profesor;
 use App\Item;
 use App\Categoria;
+use App\Grupo;
 use App\Observador;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -28,10 +30,12 @@ class ajustesController extends Controller
     {
         $categorias = Categoria::orderBy('id')->get();
         $periodos = Period::orderBy('id')->get();
+        $profesors = Profesor::orderBy('nombre')->get();
         return \view('coordinacion.ajustes.index')
             ->with([
                 'periodos' => $periodos,
                 'categorias' => $categorias,
+                'profesors' => $profesors,
             ]);
     }
 
@@ -191,5 +195,103 @@ class ajustesController extends Controller
     {
         //$path = $request->file('archivo_docentes')->store('public/archivo_docente/');
         return 'En construccion...';
+    }
+
+    public function agregarProfesor(Request $request)
+    {
+        
+        $reglas = array(
+            'nombre_profesor' => 'required',
+            'username_profesor' => 'required|unique:profesors,username',
+        );
+
+        $validator = Validator::make($request->all(), $reglas);
+
+        $validacion = $validator->validate();
+
+        if ($validator->fails()) {
+
+            return route('coordinacion.ajustes.inicio')
+                ->withErrors($validacion)
+                ->withInput($request->all());
+
+        } else {
+            $password = bcrypt('DOCENTE');
+            Profesor::create([
+                'nombre' => \request('nombre_profesor'),
+                'username' => \request('username_profesor'),
+                'mcer' => null,
+                'password' => $password,
+                'original_password' => $password,
+            ]);
+
+            Session::flash('message', 'Profesor registrado correctamente.');
+
+            return redirect()->route('coordinacion.ajustes.inicio');
+        }
+    }
+
+    public function reiniciarPassword(Request $request)
+    {        
+        $reglas = array(
+            'reset_password_profesor_id' => 'required',
+        );
+
+        $validator = Validator::make($request->all(), $reglas);
+
+        $validacion = $validator->validate();
+
+        if ($validator->fails()) {
+
+            return route('coordinacion.ajustes.inicio')
+                ->withErrors($validacion)
+                ->withInput($request->all());
+
+        } else {
+            $password = bcrypt('DOCENTE');
+            $profesor = Profesor::find(\request('reset_password_profesor_id'));
+            $profesor->password = $password;
+            $profesor->original_password = $password;
+
+            $profesor->save();
+
+            Session::flash('message', 'Password reiniciada correctamente.');
+
+            return redirect()->route('coordinacion.ajustes.inicio');
+        }
+    }
+
+    public function agregarGrupo(Request $request)
+    {
+        
+        $reglas = array(
+            'clave_grupo' => 'required',
+            'periodo_grupo' => 'required',
+            'profesor_grupo' => 'required',
+        );
+
+        $validator = Validator::make($request->all(), $reglas);
+
+        $validacion = $validator->validate();
+
+        if ($validator->fails()) {
+
+            return route('coordinacion.ajustes.inicio')
+                ->withErrors($validacion)
+                ->withInput($request->all());
+
+        } else {
+            $password = bcrypt('DOCENTE');
+            Grupo::create([
+                'id' => \request('clave_grupo'),
+                'grupo' => \request('clave_grupo'),
+                'id_periodo' => \request('periodo_grupo'),
+                'id_profesor' => \request('profesor_grupo'),
+            ]);
+
+            Session::flash('message', 'Grupo registrado correctamente.');
+
+            return redirect()->route('coordinacion.ajustes.inicio');
+        }
     }
 }
