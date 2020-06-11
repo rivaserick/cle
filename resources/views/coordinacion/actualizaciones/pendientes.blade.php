@@ -1,6 +1,8 @@
 @extends('coordinacion.actualizaciones.index')
 @section('contenido')
 
+abcde
+<!-- 
 <h2 id="titulo" class="text-center text-uppercase py-2">Actualizaciones pendientes de revisión</h2>
 <div id="contenido" class="row">
         @foreach($actualizaciones as $key => $actualizacion)
@@ -48,8 +50,7 @@
                                             Duración: <strong>{{$actualizacion->duracion}} hr</strong>
                                         </div>
                                         <div class="col-6 col-lg-3">
-                                            <!-- Evidencia: <a href="{{Storage::disk('s3')->url($actualizacion->archivo)}}" target="_blank" -->
-                                            Evidencia: <a href="#" target="_blank"
+                                            Evidencia: <a href="{{$actualizacion->archivo}}" target="_blank"
                                                 class="btn btn-primary btn-sm text-white">Ver PDF</a>
                                         </div>
                                         <div class="col-12 text-left my-2">
@@ -93,6 +94,6 @@
                     </div>
                 </div>
             </div>
-    </div>
+    </div> -->
 
 @endsection
