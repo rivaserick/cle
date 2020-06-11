@@ -5,8 +5,9 @@ abcde
 <h2 id="titulo" class="text-center text-uppercase py-2">Actualizaciones pendientes de revisión</h2>
 <div id="contenido" class="row">
         @foreach($actualizaciones as $key => $actualizacion)
-            <p>$actualizacion->id</p>
+            <p>{{$actualizacion->id}}</p>
         @endforeach
+</div>
 <!-- 
         @if ($actualizacion->id_status < 2) <div class="col-12 col-lg-12">
             @switch($actualizacion->id_status)
