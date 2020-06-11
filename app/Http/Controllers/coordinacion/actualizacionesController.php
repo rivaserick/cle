@@ -48,7 +48,7 @@ class actualizacionesController extends Controller
             return \view('coordinacion.actualizaciones.todas')
                 ->with('actualizaciones', $actualizaciones);
         } else if($id == 'pendientes'){
-            $actualizaciones = Actualizacion::where('id_status', 1)->get()->take(10);
+            $actualizaciones = Actualizacion::where('id_status', 1)->get();
             return \view('coordinacion.actualizaciones.pendientes')
                 ->with('actualizaciones', $actualizaciones);
         } else if($id == 'detalles'){
